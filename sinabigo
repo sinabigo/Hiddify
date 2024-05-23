@@ -1,0 +1,248 @@
+{
+    "dns": {
+        "fakeip": {
+            "enabled": true,
+            "inet4_range": "198.18.0.0/15",
+            "inet6_range": "fc00::/18"
+        },
+        "independent_cache": true,
+        "rules": [
+            {
+                "outbound": [
+                    "any"
+                ],
+                "server": "local"
+            },
+            {
+                "disable_cache": true,
+                "geosite": [
+                    "category-ads-all"
+                ],
+                "server": "block"
+            },
+            {
+                "query_type": [
+                    "A",
+                    "AAAA"
+                ],
+                "rewrite_ttl": 1,
+                "server": "fakeip"
+            },
+            {
+                "clash_mode": "global",
+                "server": "remote"
+            },
+            {
+                "clash_mode": "direct",
+                "server": "local"
+            },
+            {
+                "geosite": "ir",
+                "server": "local"
+            }
+        ],
+        "servers": [
+            {
+                "address": "tcp:\/\/94.140.14.140",
+                "detour": "select",
+                "tag": "remote"
+            },
+            {
+                "address": "tcp:\/\/94.140.14.140",
+                "detour": "direct",
+                "tag": "local"
+            },
+            {
+                "address": "rcode://success",
+                "tag": "block"
+            },
+            {
+                "address": "fakeip",
+                "tag": "fakeip"
+            }
+        ],
+        "strategy": "prefer_ipv4"
+    },
+    "experimental": {
+        "clash_api": {
+            "external_controller": "127.0.0.1:9090",
+            "secret": ""
+        }
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "listen_port": 6450,
+            "override_address": "8.8.8.8",
+            "override_port": 53,
+            "tag": "dns-in",
+            "type": "direct"
+        },
+        {
+            "type": "tun",
+            "tag": "tun-in",
+            "domain_strategy": "",
+            "interface_name": "tun0",
+            "inet4_address": "172.19.0.1\/30",
+            "mtu": 9000,
+            "auto_route": true,
+            "strict_route": true,
+            "stack": "system",
+            "endpoint_independent_nat": true,
+            "sniff": true,
+            "sniff_override_destination": false
+        },
+        {
+            "domain_strategy": "",
+            "listen": "0.0.0.0",
+            "listen_port": 2080,
+            "sniff": true,
+            "sniff_override_destination": false,
+            "tag": "mixed-in",
+            "type": "mixed"
+        }
+    ],
+    "log": {},
+    "outbounds": [
+        {
+            "tag": "select",
+            "type": "selector",
+            "outbounds": [
+                "AUTOTEST",
+                "🇩🇪T.me/Wearestand",
+                "🇬🇧T.me/Wearestand",
+                "🇩🇪T.me/Wearestand 2"
+                
+        
+                
+
+            ]
+        },
+  {
+            "tag": "AUTOTEST",
+            "type": "urltest",
+            "outbounds": [
+         
+                "🇩🇪T.me/Wearestand",
+                "🇬🇧T.me/Wearestand",
+                "🇩🇪T.me/Wearestand 2"
+                
+    
+
+                
+              
+                
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+        {
+            "tag": "direct",
+            "type": "direct"
+        },
+        {
+            "tag": "block",
+            "type": "block"
+        },
+        {
+            "tag": "dns-out",
+            "type": "dns"
+        },
+
+  
+
+             {
+      "type": "vless",
+      "tag": "🇬🇧T.me/Wearestand",
+      "server": "159.65.23.89", 
+      "server_port": 443,
+      "uuid": "f7bb4c4b-d759-48d9-bdc4-c6297f2fe576", 
+      "flow": "",
+      "transport": {
+        "type": "http"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "www.timeto.com", 
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OmS4dPtzx1h9O0sgX-wb5vw2hOdf7ZOsCSrZLbxRekQ",
+          "short_id": "6f2eec5efd3a315e"
+        }
+      }
+    },
+    
+   {
+      "type": "vless",
+      "tag": "🇩🇪T.me/Wearestand",
+      "server": "188.34.198.159", 
+      "server_port": 443,
+      "uuid": "634f1567-1c3c-4c4d-a2dc-c9d2cb291f7f", 
+      "flow": "",
+      "transport": {
+        "type": "http"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "gitlab.com", 
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "X9DLg8U6D8cK1KFs-LHItmkkfcflqzkcN6689Y0KOEc",
+          "short_id": "edda969cf71196ce"
+        }
+      }
+    },
+
+       {
+            "server": "130.61.239.2",
+            "server_port": 45000,
+            "tag": "🇩🇪T.me/Wearestand 2",
+            "transport": {
+                "path": "/miao",
+                "type": "ws"
+            },
+            "type": "vmess",
+            "security": "auto",
+            "uuid": "44d294bb-98fc-300f-bdbc-5a10b9adac6b"
+        }
+   
+
+    ],
+    "route": {
+        "auto_detect_interface": true,
+        "rules": [
+            {
+                "geosite": "category-ads-all",
+                "outbound": "block"
+            },
+            {
+                "outbound": "dns-out",
+                "port": 53
+            },
+            {
+                "clash_mode": "direct",
+                "outbound": "direct"
+            },
+            {
+                "clash_mode": "global",
+                "outbound": "select"
+            },
+            {
+                "geoip": [
+                    "ir",
+                    "private"
+                ],
+                "outbound": "direct"
+            }
+        ]
+    }
+}
