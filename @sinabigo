@@ -47,16 +47,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3120::1",
-        "2a06:98c1:3121::1",
-        "188.114.96.1",
-        "188.114.97.1",
-        "104.18.202.232",
+        "188.114.97.3",
+        "188.114.96.3",
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3",
         "104.18.203.232",
-        "2a06:98c1:3120::1",
-        "2a06:98c1:3121::1",
-        "188.114.96.1",
-        "188.114.97.1"
+        "104.18.202.232",
+        "188.114.96.3",
+        "188.114.97.3",
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3"
       ]
     },
     "independent_cache": true
@@ -98,49 +98,49 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 SiNABiGO\n@SiNABiGO § hy2+ech",
-        "🇳🇱 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § hy2+ech",
-        "🇳🇱 SiNABiGO\n@SiNABiGO § sstls",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
         "stl-ircp1",
-        "🇳🇱 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § sstls",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
         "stl-ircp1v6",
-        "🇳🇱 SiNABiGO | 𝟐\n@SiNABiGO § hy2+ech",
-        "🇳🇱 SiNABiGO | 𝟐 | 𝐢𝐩𝐯𝟔\n@SiNABiGO § hy2+ech",
-        "🇳🇱 SiNABiGO | 𝟐\n@SiNABiGO § sstls",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
         "stl-ircp2",
-        "🇳🇱 SiNABiGO | 𝟐 | 𝐢𝐩𝐯𝟔\n@SiNABiGO § sstls",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
         "stl-ircp2v6",
-        "🇳🇱 SiNABiGO | 𝟏\u0026𝟐\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇳🇱 SiNABiGO | 𝟏\u0026𝟐 | 𝐢𝐩𝐯𝟔\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇸🇪 SiNABiGO\n@SiNABiGO § hy2+ech",
-        "🇸🇪 SiNABiGO\n@SiNABiGO § sstls",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟏\u0026𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § vl+ws+tls+cdn+frag",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟏\u0026𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § vl+ws+tls+cdn+frag",
+        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
+        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
         "stl-se",
-        "🇸🇪 SiNABiGO\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇸🇪 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇦🇹 SiNABiGO\n@SiNABiGO § hy2+ech",
-        "🇦🇹 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § hy2+ech",
-        "🇦🇹 SiNABiGO\n@SiNABiGO § sstls",
+        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
+        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
+        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
+        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § hy2+ech",
+        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
         "stl-pqat",
-        "🇦🇹 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § sstls",
+        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § sstls",
         "stl-pqatv6",
-        "🇦🇹 SiNABiGO\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇦🇹 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇫🇮 SiNABiGO\n@SiNABiGO § hy2+ech",
-        "🇫🇮 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § hy2+ech",
-        "🇫🇮 SiNABiGO\n@SiNABiGO § sstls",
+        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
+        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
+        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
+        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § hy2+ech",
+        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
         "stl-hzfi",
-        "🇫🇮 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § sstls",
+        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § sstls",
         "stl-hzfiv6",
-        "🇫🇮 SiNABiGO\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇫🇮 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇳🇱 SiNABiGO\n@SiNABiGO",
-        "🇳🇱 SiNABiGO\n@SiNABiGO § 0",
-        "🇳🇱 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO",
-        "🇺🇸 SiNABiGO\n@SiNABiGO",
-        "🇺🇸 SiNABiGO\n@SiNABiGO § 0",
-        "🇺🇸 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO",
-        "🇦🇺 SiNABiGO\n@SiNABiGO",
-        "🇦🇺 SiNABiGO | 𝟐\n@SiNABiGO"
+        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
+        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § 0",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/",
+        "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
+        "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § 0",
+        "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/",
+        "🇦🇺 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
+        "🇦🇺 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝟐\n/"
       ],
       "default": "auto"
     },
@@ -148,49 +148,49 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 SiNABiGO\n@SiNABiGO § hy2+ech",
-        "🇳🇱 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § hy2+ech",
-        "🇳🇱 SiNABiGO\n@SiNABiGO § sstls",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
         "stl-ircp1",
-        "🇳🇱 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § sstls",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
         "stl-ircp1v6",
-        "🇳🇱 SiNABiGO | 𝟐\n@SiNABiGO § hy2+ech",
-        "🇳🇱 SiNABiGO | 𝟐 | 𝐢𝐩𝐯𝟔\n@SiNABiGO § hy2+ech",
-        "🇳🇱 SiNABiGO | 𝟐\n@SiNABiGO § sstls",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
         "stl-ircp2",
-        "🇳🇱 SiNABiGO | 𝟐 | 𝐢𝐩𝐯𝟔\n@SiNABiGO § sstls",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
         "stl-ircp2v6",
-        "🇳🇱 SiNABiGO | 𝟏\u0026𝟐\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇳🇱 SiNABiGO | 𝟏\u0026𝟐 | 𝐢𝐩𝐯𝟔\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇸🇪 SiNABiGO\n@SiNABiGO § hy2+ech",
-        "🇸🇪 SiNABiGO\n@SiNABiGO § sstls",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟏\u0026𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § vl+ws+tls+cdn+frag",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟏\u0026𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § vl+ws+tls+cdn+frag",
+        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
+        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
         "stl-se",
-        "🇸🇪 SiNABiGO\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇸🇪 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇦🇹 SiNABiGO\n@SiNABiGO § hy2+ech",
-        "🇦🇹 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § hy2+ech",
-        "🇦🇹 SiNABiGO\n@SiNABiGO § sstls",
+        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
+        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
+        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
+        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § hy2+ech",
+        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
         "stl-pqat",
-        "🇦🇹 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § sstls",
+        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § sstls",
         "stl-pqatv6",
-        "🇦🇹 SiNABiGO\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇦🇹 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇫🇮 SiNABiGO\n@SiNABiGO § hy2+ech",
-        "🇫🇮 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § hy2+ech",
-        "🇫🇮 SiNABiGO\n@SiNABiGO § sstls",
+        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
+        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
+        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
+        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § hy2+ech",
+        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
         "stl-hzfi",
-        "🇫🇮 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § sstls",
+        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § sstls",
         "stl-hzfiv6",
-        "🇫🇮 SiNABiGO\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇫🇮 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § vl+ws+tls+cdn+frag",
-        "🇳🇱 SiNABiGO\n@SiNABiGO",
-        "🇳🇱 SiNABiGO\n@SiNABiGO § 0",
-        "🇳🇱 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO",
-        "🇺🇸 SiNABiGO\n@SiNABiGO",
-        "🇺🇸 SiNABiGO\n@SiNABiGO § 0",
-        "🇺🇸 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO",
-        "🇦🇺 SiNABiGO\n@SiNABiGO",
-        "🇦🇺 SiNABiGO | 𝟐\n@SiNABiGO"
+        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
+        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § 0",
+        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/",
+        "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
+        "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § 0",
+        "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/",
+        "🇦🇺 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
+        "🇦🇺 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝟐\n/"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -198,14 +198,14 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 SiNABiGO\n@SiNABiGO § hy2+ech",
+      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
       "server": "193.38.54.48",
       "server_port": 443,
       "obfs": {
         "type": "salamander",
-        "password": "@SiNABiGO-5bdf790f-0af2-4481-a624-41b66e7e3489"
+        "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489"
       },
-      "password": "@SiNABiGO-5bdf790f-0af2-4481-a624-41b66e7e3489",
+      "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489",
       "tls": {
         "enabled": true,
         "server_name": "let-him-cook.ircp.online",
@@ -226,14 +226,14 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § hy2+ech",
+      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
       "server": "2a09:7c44:0:14::1",
       "server_port": 443,
       "obfs": {
         "type": "salamander",
-        "password": "@SiNABiGO-5bdf790f-0af2-4481-a624-41b66e7e3489"
+        "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489"
       },
-      "password": "@SiNABiGO-5bdf790f-0af2-4481-a624-41b66e7e3489",
+      "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489",
       "tls": {
         "enabled": true,
         "server_name": "let-him-cook.ircp.online",
@@ -254,7 +254,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 SiNABiGO\n@SiNABiGO § sstls",
+      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
       "detour": "stl-ircp1",
       "server": "",
       "server_port": 0,
@@ -283,7 +283,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § sstls",
+      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
       "detour": "stl-ircp1v6",
       "server": "",
       "server_port": 0,
@@ -312,14 +312,14 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 SiNABiGO | 𝟐\n@SiNABiGO § hy2+ech",
+      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
       "server": "37.221.127.169",
       "server_port": 443,
       "obfs": {
         "type": "salamander",
-        "password": "@SiNABiGO-5bdf790f-0af2-4481-a624-41b66e7e3489-2"
+        "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489-2"
       },
-      "password": "@SiNABiGO-5bdf790f-0af2-4481-a624-41b66e7e3489-2",
+      "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489-2",
       "tls": {
         "enabled": true,
         "server_name": "let-her-cook.ircp.online",
@@ -340,14 +340,14 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 SiNABiGO | 𝟐 | 𝐢𝐩𝐯𝟔\n@SiNABiGO § hy2+ech",
+      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
       "server": "2a09:7c44:0:13::1",
       "server_port": 443,
       "obfs": {
         "type": "salamander",
-        "password": "@SiNABiGO-5bdf790f-0af2-4481-a624-41b66e7e3489-2"
+        "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489-2"
       },
-      "password": "@SiNABiGO-5bdf790f-0af2-4481-a624-41b66e7e3489-2",
+      "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489-2",
       "tls": {
         "enabled": true,
         "server_name": "let-her-cook.ircp.online",
@@ -368,7 +368,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 SiNABiGO | 𝟐\n@SiNABiGO § sstls",
+      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
       "detour": "stl-ircp2",
       "server": "",
       "server_port": 0,
@@ -397,7 +397,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 SiNABiGO | 𝟐 | 𝐢𝐩𝐯𝟔\n@SiNABiGO § sstls",
+      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
       "detour": "stl-ircp2v6",
       "server": "",
       "server_port": 0,
@@ -426,7 +426,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 SiNABiGO | 𝟏\u0026𝟐\n@SiNABiGO § vl+ws+tls+cdn+frag",
+      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟏\u0026𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § vl+ws+tls+cdn+frag",
       "tls_fragment": {
         "enabled": true,
         "size": "20-40",
@@ -448,7 +448,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/@SiNABiGO",
+        "path": "/@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
         "headers": {
           "Host": "cdn.ircp.online"
         }
@@ -457,7 +457,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 SiNABiGO | 𝟏\u0026𝟐 | 𝐢𝐩𝐯𝟔\n@SiNABiGO § vl+ws+tls+cdn+frag",
+      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟏\u0026𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § vl+ws+tls+cdn+frag",
       "tls_fragment": {
         "enabled": true,
         "size": "20-40",
@@ -479,7 +479,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/@SiNABiGO",
+        "path": "/@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
         "headers": {
           "Host": "cdn.ircp.online"
         }
@@ -488,8 +488,8 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇪 SiNABiGO\n@SiNABiGO § hy2+ech",
-      "server": "83.226.36.112",
+      "tag": "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
+      "server": "85.230.209.10",
       "server_port": 443,
       "obfs": {
         "type": "salamander",
@@ -516,7 +516,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 SiNABiGO\n@SiNABiGO § sstls",
+      "tag": "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
       "detour": "stl-se",
       "server": "",
       "server_port": 0,
@@ -527,7 +527,7 @@
     {
       "type": "shadowtls",
       "tag": "stl-se",
-      "server": "83.226.36.112",
+      "server": "85.230.209.10",
       "server_port": 9443,
       "version": 3,
       "password": "bqmnECAg8mGe4MwsZopppA==",
@@ -545,7 +545,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 SiNABiGO\n@SiNABiGO § vl+ws+tls+cdn+frag",
+      "tag": "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
       "tls_fragment": {
         "enabled": true,
         "size": "20-40",
@@ -576,7 +576,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § vl+ws+tls+cdn+frag",
+      "tag": "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
       "tls_fragment": {
         "enabled": true,
         "size": "20-40",
@@ -607,7 +607,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇹 SiNABiGO\n@SiNABiGO § hy2+ech",
+      "tag": "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
       "server": "5.181.21.84",
       "server_port": 443,
       "obfs": {
@@ -635,7 +635,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇹 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § hy2+ech",
+      "tag": "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § hy2+ech",
       "server": "2a13:6305:0:6::1",
       "server_port": 443,
       "obfs": {
@@ -663,7 +663,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇦🇹 SiNABiGO\n@SiNABiGO § sstls",
+      "tag": "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
       "detour": "stl-pqat",
       "server": "",
       "server_port": 0,
@@ -692,7 +692,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇦🇹 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § sstls",
+      "tag": "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § sstls",
       "detour": "stl-pqatv6",
       "server": "",
       "server_port": 0,
@@ -721,7 +721,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 SiNABiGO\n@SiNABiGO § vl+ws+tls+cdn+frag",
+      "tag": "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
       "tls_fragment": {
         "enabled": true,
         "size": "20-40",
@@ -752,7 +752,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § vl+ws+tls+cdn+frag",
+      "tag": "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
       "tls_fragment": {
         "enabled": true,
         "size": "20-40",
@@ -783,7 +783,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 SiNABiGO\n@SiNABiGO § hy2+ech",
+      "tag": "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
       "server": "37.27.40.21",
       "server_port": 443,
       "obfs": {
@@ -811,7 +811,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § hy2+ech",
+      "tag": "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § hy2+ech",
       "server": "2a01:4f9:c012:cece::1",
       "server_port": 443,
       "obfs": {
@@ -839,7 +839,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇫🇮 SiNABiGO\n@SiNABiGO § sstls",
+      "tag": "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
       "detour": "stl-hzfi",
       "server": "",
       "server_port": 0,
@@ -868,7 +868,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇫🇮 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § sstls",
+      "tag": "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § sstls",
       "detour": "stl-hzfiv6",
       "server": "",
       "server_port": 0,
@@ -897,7 +897,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 SiNABiGO\n@SiNABiGO § vl+ws+tls+cdn+frag",
+      "tag": "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
       "tls_fragment": {
         "enabled": true,
         "size": "20-40",
@@ -928,7 +928,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO § vl+ws+tls+cdn+frag",
+      "tag": "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
       "tls_fragment": {
         "enabled": true,
         "size": "20-40",
@@ -959,7 +959,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 SiNABiGO\n@SiNABiGO",
+      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
       "server": "188.166.43.138",
       "server_port": 443,
       "obfs": {
@@ -987,7 +987,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 SiNABiGO\n@SiNABiGO § 0",
+      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § 0",
       "tls_fragment": {
         "enabled": true,
         "size": "20-40",
@@ -1018,7 +1018,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO",
+      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/",
       "tls_fragment": {
         "enabled": true,
         "size": "20-40",
@@ -1049,7 +1049,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 SiNABiGO\n@SiNABiGO",
+      "tag": "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
       "server": "24.199.84.113",
       "server_port": 443,
       "obfs": {
@@ -1077,7 +1077,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 SiNABiGO\n@SiNABiGO § 0",
+      "tag": "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § 0",
       "tls_fragment": {
         "enabled": true,
         "size": "20-40",
@@ -1108,7 +1108,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 SiNABiGO | 𝐢𝐩𝐯𝟔\n@SiNABiGO",
+      "tag": "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/",
       "tls_fragment": {
         "enabled": true,
         "size": "20-40",
@@ -1139,7 +1139,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 SiNABiGO\n@SiNABiGO",
+      "tag": "🇦🇺 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
       "server": "152.69.179.155",
       "server_port": 443,
       "obfs": {
@@ -1167,7 +1167,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 SiNABiGO | 𝟐\n@SiNABiGO",
+      "tag": "🇦🇺 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝟐\n/",
       "server": "158.179.18.187",
       "server_port": 443,
       "up_mbps": 10000,
@@ -1263,7 +1263,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "981ibSpSgUdNOuYP"
+      "secret": "-NKHSn0ygE09zc2f"
     }
   }
 }
