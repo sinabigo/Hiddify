@@ -34,6 +34,20 @@
     ],
     "rules": [
       {
+        "domain": [
+          "atpqaz.daiijannapoleon.fun",
+          "gbdgtlocnaz1.daiijannapoleon.fun",
+          "gbdgtlocnaz2.daiijannapoleon.fun",
+          "auoraz2.daiijannapoleon.fun",
+          "h.88981401.xyz",
+          "arvancloudstatus.ir",
+          "semeaz.daiijannapoleon.fun",
+          "fihzaz.daiijannapoleon.fun",
+          "auoraz1.daiijannapoleon.fun"
+        ],
+        "server": "dns-direct"
+      },
+      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -51,12 +65,12 @@
         "188.114.96.3",
         "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
-        "104.18.203.232",
-        "104.18.202.232",
-        "188.114.96.3",
-        "188.114.97.3",
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3"
+        "104.17.147.22",
+        "104.17.148.22",
+        "172.67.214.246",
+        "104.21.83.62",
+        "2606:4700:3030::ac43:d6f6",
+        "2606:4700:3030::6815:533e"
       ]
     },
     "independent_cache": true
@@ -87,9 +101,7 @@
       "type": "direct",
       "tag": "dns-in",
       "listen": "127.0.0.1",
-      "listen_port": 6450,
-      "override_address": "1.1.1.1",
-      "override_port": 53
+      "listen_port": 6450
     }
   ],
   "outbounds": [
@@ -98,49 +110,21 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
-        "stl-ircp1",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
-        "stl-ircp1v6",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
-        "stl-ircp2",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
-        "stl-ircp2v6",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟏\u0026𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § vl+ws+tls+cdn+frag",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟏\u0026𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § vl+ws+tls+cdn+frag",
-        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
-        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
-        "stl-se",
-        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
-        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
-        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
-        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § hy2+ech",
-        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
-        "stl-pqat",
-        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § sstls",
-        "stl-pqatv6",
-        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
-        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
-        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
-        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § hy2+ech",
-        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
-        "stl-hzfi",
-        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § sstls",
-        "stl-hzfiv6",
-        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
-        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § 0",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/",
-        "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
-        "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § 0",
-        "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/",
-        "🇦🇺 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
-        "🇦🇺 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝟐\n/"
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٢)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٣)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(۴)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(۵)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(۶)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٧)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٨)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٩)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١٠)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١١)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١٢)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١٣)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١۴)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١۵)"
       ],
       "default": "auto"
     },
@@ -148,49 +132,21 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
-        "stl-ircp1",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
-        "stl-ircp1v6",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
-        "stl-ircp2",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
-        "stl-ircp2v6",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟏\u0026𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § vl+ws+tls+cdn+frag",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟏\u0026𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § vl+ws+tls+cdn+frag",
-        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
-        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
-        "stl-se",
-        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
-        "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
-        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
-        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § hy2+ech",
-        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
-        "stl-pqat",
-        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § sstls",
-        "stl-pqatv6",
-        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
-        "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
-        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
-        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § hy2+ech",
-        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
-        "stl-hzfi",
-        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § sstls",
-        "stl-hzfiv6",
-        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
-        "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § 0",
-        "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/",
-        "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
-        "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § 0",
-        "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/",
-        "🇦🇺 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
-        "🇦🇺 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝟐\n/"
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٢)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٣)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(۴)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(۵)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(۶)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٧)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٨)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٩)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١٠)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١١)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١٢)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١٣)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١۴)",
+        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١۵)"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -198,14 +154,15 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
-      "server": "193.38.54.48",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١)",
+      "domain_strategy": "prefer_ipv6",
+      "server": "h.88981401.xyz",
       "server_port": 443,
       "obfs": {
         "type": "salamander",
-        "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489"
+        "password": "@ln2ray-5bdf790f-0af2-4481-a624-41b66e7e3489"
       },
-      "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489",
+      "password": "@ln2ray-5bdf790f-0af2-4481-a624-41b66e7e3489",
       "tls": {
         "enabled": true,
         "server_name": "let-him-cook.ircp.online",
@@ -226,100 +183,15 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
-      "server": "2a09:7c44:0:14::1",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٢)",
+      "domain_strategy": "prefer_ipv6",
+      "server": "h.88981401.xyz",
       "server_port": 443,
       "obfs": {
         "type": "salamander",
-        "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489"
+        "password": "@ln2ray-5bdf790f-0af2-4481-a624-41b66e7e3489-2"
       },
-      "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489",
-      "tls": {
-        "enabled": true,
-        "server_name": "let-him-cook.ircp.online",
-        "alpn": "h3",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "ech": {
-          "enabled": true,
-          "pq_signature_schemes_enabled": true,
-          "config": [
-            "-----BEGIN ECH CONFIGS-----",
-            "AFf+DQBTAAAgACCc2kqEYGusiYc5fj1smMpQJYQLckpS1bgOaCDLvoiofgAIAAEA",
-            "AQABAAMAIFstLXBxLXNpZ25hdHVyZS1zY2hlbWVzLWVuYWJsZWRdAAA=",
-            "-----END ECH CONFIGS-----"
-          ]
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
-      "detour": "stl-ircp1",
-      "server": "",
-      "server_port": 0,
-      "method": "chacha20-ietf-poly1305",
-      "password": "zQnKJKopblAcBRnbNfRfuw==",
-      "udp_over_tcp": true
-    },
-    {
-      "type": "shadowtls",
-      "tag": "stl-ircp1",
-      "server": "193.38.54.48",
-      "server_port": 9443,
-      "version": 3,
-      "password": "5MG6nLaP68GKnd6qmm/90Q==",
-      "tls": {
-        "enabled": true,
-        "server_name": "blogs.windows.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
-      "detour": "stl-ircp1v6",
-      "server": "",
-      "server_port": 0,
-      "method": "chacha20-ietf-poly1305",
-      "password": "zQnKJKopblAcBRnbNfRfuw==",
-      "udp_over_tcp": true
-    },
-    {
-      "type": "shadowtls",
-      "tag": "stl-ircp1v6",
-      "server": "2a09:7c44:0:14::1",
-      "server_port": 9443,
-      "version": 3,
-      "password": "5MG6nLaP68GKnd6qmm/90Q==",
-      "tls": {
-        "enabled": true,
-        "server_name": "blogs.windows.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
-      "server": "37.221.127.169",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489-2"
-      },
-      "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489-2",
+      "password": "@ln2ray-5bdf790f-0af2-4481-a624-41b66e7e3489-2",
       "tls": {
         "enabled": true,
         "server_name": "let-her-cook.ircp.online",
@@ -339,100 +211,15 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § hy2+ech",
-      "server": "2a09:7c44:0:13::1",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489-2"
-      },
-      "password": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆-5bdf790f-0af2-4481-a624-41b66e7e3489-2",
-      "tls": {
-        "enabled": true,
-        "server_name": "let-her-cook.ircp.online",
-        "alpn": "h3",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "ech": {
-          "enabled": true,
-          "pq_signature_schemes_enabled": true,
-          "config": [
-            "-----BEGIN ECH CONFIGS-----",
-            "AFf+DQBTAAAgACDEm4x9dlkKtLblXP7y0ZjKr7g6DdP2WaOgIjI6ujcnTQAIAAEA",
-            "AQABAAMAIFstLXBxLXNpZ25hdHVyZS1zY2hlbWVzLWVuYWJsZWRdAAA=",
-            "-----END ECH CONFIGS-----"
-          ]
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
-      "detour": "stl-ircp2",
-      "server": "",
-      "server_port": 0,
-      "method": "chacha20-ietf-poly1305",
-      "password": "EINNHtab6dVjXgpaCSliFg==",
-      "udp_over_tcp": true
-    },
-    {
-      "type": "shadowtls",
-      "tag": "stl-ircp2",
-      "server": "37.221.127.169",
-      "server_port": 9443,
-      "version": 3,
-      "password": "bZvMcepqEMntxa1vkbm4XA==",
-      "tls": {
-        "enabled": true,
-        "server_name": "blogs.windows.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § sstls",
-      "detour": "stl-ircp2v6",
-      "server": "",
-      "server_port": 0,
-      "method": "chacha20-ietf-poly1305",
-      "password": "EINNHtab6dVjXgpaCSliFg==",
-      "udp_over_tcp": true
-    },
-    {
-      "type": "shadowtls",
-      "tag": "stl-ircp2v6",
-      "server": "2a09:7c44:0:13::1",
-      "server_port": 9443,
-      "version": 3,
-      "password": "bZvMcepqEMntxa1vkbm4XA==",
-      "tls": {
-        "enabled": true,
-        "server_name": "blogs.windows.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟏\u0026𝟐\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § vl+ws+tls+cdn+frag",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٣)",
+      "domain_strategy": "prefer_ipv6",
       "tls_fragment": {
         "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
+        "size": "10-20",
+        "sleep": "0"
       },
-      "server": "188.114.96.12",
+      "server": "arvancloudstatus.ir",
       "server_port": 443,
       "uuid": "5bdf790f-0af2-4481-a624-41b66e7e3489",
       "tls": {
@@ -448,38 +235,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-        "headers": {
-          "Host": "cdn.ircp.online"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 | 𝟏\u0026𝟐 | 𝐢𝐩𝐯𝟔\n@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 § vl+ws+tls+cdn+frag",
-      "tls_fragment": {
-        "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
-      },
-      "server": "2a06:98c1:3121::c",
-      "server_port": 443,
-      "uuid": "5bdf790f-0af2-4481-a624-41b66e7e3489",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.ircp.online",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
+        "path": "/@ln2ray",
         "headers": {
           "Host": "cdn.ircp.online"
         }
@@ -488,17 +244,18 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
-      "server": "85.230.209.10",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(۴)",
+      "domain_strategy": "prefer_ipv6",
+      "server": "semeaz.daiijannapoleon.fun",
       "server_port": 443,
       "obfs": {
         "type": "salamander",
-        "password": "mH4pNtUvtJVz"
+        "password": "@azadi_az_inja_migzare"
       },
-      "password": "ONSqhzOs55xn",
+      "password": "zCBVQV9M9YGd",
       "tls": {
         "enabled": true,
-        "server_name": "sahand.hideandsurf.com",
+        "server_name": "sahand.seyed-ali-khamenei-binamous.site",
         "alpn": "h3",
         "min_version": "1.3",
         "max_version": "1.3",
@@ -507,7 +264,7 @@
           "pq_signature_schemes_enabled": true,
           "config": [
             "-----BEGIN ECH CONFIGS-----",
-            "AFf+DQBTAAAgACBM/7OFwc4Djax1NZ0sUGm0Y2cHVn9IfI7ZhzoeHCMucwAIAAEA",
+            "AFf+DQBTAAAgACDg4EJndExgiJsI56wNbuVMgAV90eAL7cDXrs1g+VSqSAAIAAEA",
             "AQABAAMAIFstLXBxLXNpZ25hdHVyZS1zY2hlbWVzLWVuYWJsZWRdAAA=",
             "-----END ECH CONFIGS-----"
           ]
@@ -515,48 +272,20 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
-      "detour": "stl-se",
-      "server": "",
-      "server_port": 0,
-      "method": "chacha20-ietf-poly1305",
-      "password": "3KkSWyQkv2X2wVrX8tg7wg==",
-      "udp_over_tcp": true
-    },
-    {
-      "type": "shadowtls",
-      "tag": "stl-se",
-      "server": "85.230.209.10",
-      "server_port": 9443,
-      "version": 3,
-      "password": "bqmnECAg8mGe4MwsZopppA==",
-      "tls": {
-        "enabled": true,
-        "server_name": "blogs.windows.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(۵)",
+      "domain_strategy": "prefer_ipv6",
       "tls_fragment": {
         "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
+        "size": "10-20",
+        "sleep": "0"
       },
-      "server": "188.114.96.12",
+      "server": "arvancloudstatus.ir",
       "server_port": 443,
-      "uuid": "81625684-4552-49f8-b1c1-1f14790528c5",
+      "uuid": "29cf96e6-8008-4233-a883-4b5daeb72309",
       "tls": {
         "enabled": true,
-        "server_name": "helloworld.hideandsurf.com",
+        "server_name": "helloworld.seyed-ali-khamenei-binamous.site",
         "alpn": "http/1.1",
         "min_version": "1.3",
         "max_version": "1.3",
@@ -567,57 +296,27 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/@so5-Sher4BaD",
+        "path": "/@azadi_az_inja_migzare",
         "headers": {
-          "Host": "helloworld.hideandsurf.com"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
-      "tls_fragment": {
-        "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
-      },
-      "server": "2a06:98c1:3121::c",
-      "server_port": 443,
-      "uuid": "81625684-4552-49f8-b1c1-1f14790528c5",
-      "tls": {
-        "enabled": true,
-        "server_name": "helloworld.hideandsurf.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@so5-Sher4BaD",
-        "headers": {
-          "Host": "helloworld.hideandsurf.com"
+          "Host": "helloworld.seyed-ali-khamenei-binamous.site"
         }
       },
       "packet_encoding": "xudp"
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
-      "server": "5.181.21.84",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(۶)",
+      "domain_strategy": "prefer_ipv6",
+      "server": "fihzaz.daiijannapoleon.fun",
       "server_port": 443,
       "obfs": {
         "type": "salamander",
-        "password": "Kh4meNeIGetL0stFromIran2024"
+        "password": "tVHUA6na0Cyu"
       },
-      "password": "b947d658-8140-4ea0-ba18-23a6d48788bb",
+      "password": "https://t.me/javidnamanIran",
       "tls": {
         "enabled": true,
-        "server_name": "sabalan.hideandsurf.com",
+        "server_name": "alborz.seyed-ali-khamenei-binamous.site",
         "alpn": "h3",
         "min_version": "1.3",
         "max_version": "1.3",
@@ -626,7 +325,7 @@
           "pq_signature_schemes_enabled": true,
           "config": [
             "-----BEGIN ECH CONFIGS-----",
-            "AFf+DQBTAAAgACB162hoUp9SqWj/B4TK0Yltr/j7PoqWR8YKyXvjpcZ6UwAIAAEA",
+            "AFf+DQBTAAAgACDFjn9bYsyxCVBoOlDicUgxNykCK9UufM7XhMoot6uDIQAIAAEA",
             "AQABAAMAIFstLXBxLXNpZ25hdHVyZS1zY2hlbWVzLWVuYWJsZWRdAAA=",
             "-----END ECH CONFIGS-----"
           ]
@@ -634,18 +333,51 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٧)",
+      "domain_strategy": "prefer_ipv6",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "10-20",
+        "sleep": "0"
+      },
+      "server": "arvancloudstatus.ir",
+      "server_port": 443,
+      "uuid": "ba4f3a16-6294-47ef-94b8-1f7ac93c68b9",
+      "tls": {
+        "enabled": true,
+        "server_name": "duckngo.seyed-ali-khamenei-binamous.site",
+        "alpn": "http/1.1",
+        "min_version": "1.3",
+        "max_version": "1.3",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@azadi_az_inja_migzare",
+        "headers": {
+          "Host": "duckngo.seyed-ali-khamenei-binamous.site"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § hy2+ech",
-      "server": "2a13:6305:0:6::1",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٨)",
+      "domain_strategy": "prefer_ipv6",
+      "server": "atpqaz.daiijannapoleon.fun",
       "server_port": 443,
       "obfs": {
         "type": "salamander",
-        "password": "Kh4meNeIGetL0stFromIran2024"
+        "password": "FBrEbtKlW48Z"
       },
-      "password": "b947d658-8140-4ea0-ba18-23a6d48788bb",
+      "password": "@azadi_az_inja_migzare",
       "tls": {
         "enabled": true,
-        "server_name": "sabalan.hideandsurf.com",
+        "server_name": "sabalan.seyed-ali-khamenei-binamous.site",
         "alpn": "h3",
         "min_version": "1.3",
         "max_version": "1.3",
@@ -654,7 +386,7 @@
           "pq_signature_schemes_enabled": true,
           "config": [
             "-----BEGIN ECH CONFIGS-----",
-            "AFf+DQBTAAAgACB162hoUp9SqWj/B4TK0Yltr/j7PoqWR8YKyXvjpcZ6UwAIAAEA",
+            "AFf+DQBTAAAgACDPkwcped6BMFIzNJOhtAFxKRtW31aVNjMh8TgHuksEfAAIAAEA",
             "AQABAAMAIFstLXBxLXNpZ25hdHVyZS1zY2hlbWVzLWVuYWJsZWRdAAA=",
             "-----END ECH CONFIGS-----"
           ]
@@ -662,77 +394,20 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
-      "detour": "stl-pqat",
-      "server": "",
-      "server_port": 0,
-      "method": "chacha20-ietf-poly1305",
-      "password": "FtzMJr2WbF+nBeWCbTn2Hw==",
-      "udp_over_tcp": true
-    },
-    {
-      "type": "shadowtls",
-      "tag": "stl-pqat",
-      "server": "5.181.21.84",
-      "server_port": 9443,
-      "version": 3,
-      "password": "KAiRsq+DZxuCzukkC1doCQ==",
-      "tls": {
-        "enabled": true,
-        "server_name": "blogs.windows.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § sstls",
-      "detour": "stl-pqatv6",
-      "server": "",
-      "server_port": 0,
-      "method": "chacha20-ietf-poly1305",
-      "password": "FtzMJr2WbF+nBeWCbTn2Hw==",
-      "udp_over_tcp": true
-    },
-    {
-      "type": "shadowtls",
-      "tag": "stl-pqatv6",
-      "server": "2a13:6305:0:6::1",
-      "server_port": 9443,
-      "version": 3,
-      "password": "KAiRsq+DZxuCzukkC1doCQ==",
-      "tls": {
-        "enabled": true,
-        "server_name": "blogs.windows.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(٩)",
+      "domain_strategy": "prefer_ipv6",
       "tls_fragment": {
         "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
+        "size": "10-20",
+        "sleep": "0"
       },
-      "server": "188.114.96.12",
+      "server": "arvancloudstatus.ir",
       "server_port": 443,
-      "uuid": "b947d658-8140-4ea0-ba18-23a6d48788bb",
+      "uuid": "4f5f38f2-e659-4901-976b-13fa54544bd6",
       "tls": {
         "enabled": true,
-        "server_name": "pathfinder.hideandsurf.com",
+        "server_name": "pathfinder.seyed-ali-khamenei-binamous.site",
         "alpn": "http/1.1",
         "min_version": "1.3",
         "max_version": "1.3",
@@ -743,57 +418,27 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/Kh4meNeIGetL0stFromIran2024",
+        "path": "/https://t.me/javidnamaniran",
         "headers": {
-          "Host": "pathfinder.hideandsurf.com"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
-      "tls_fragment": {
-        "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
-      },
-      "server": "2a06:98c1:3121::c",
-      "server_port": 443,
-      "uuid": "b947d658-8140-4ea0-ba18-23a6d48788bb",
-      "tls": {
-        "enabled": true,
-        "server_name": "pathfinder.hideandsurf.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Kh4meNeIGetL0stFromIran2024",
-        "headers": {
-          "Host": "pathfinder.hideandsurf.com"
+          "Host": "pathfinder.seyed-ali-khamenei-binamous.site"
         }
       },
       "packet_encoding": "xudp"
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § hy2+ech",
-      "server": "37.27.40.21",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١٠)",
+      "domain_strategy": "prefer_ipv6",
+      "server": "gbdgtlocnaz1.daiijannapoleon.fun",
       "server_port": 443,
       "obfs": {
         "type": "salamander",
-        "password": "2X2lDkApzb07"
+        "password": "@azadi_az_inja_migzare"
       },
-      "password": "qeUUaVSyGo+C",
+      "password": "4f5f38f2-e659-4901-976b-13fa54544bd6",
       "tls": {
         "enabled": true,
-        "server_name": "alborz.hideandsurf.com",
+        "server_name": "gbdgtlocnaz1.daiijannapoleon.fun",
         "alpn": "h3",
         "min_version": "1.3",
         "max_version": "1.3",
@@ -802,7 +447,7 @@
           "pq_signature_schemes_enabled": true,
           "config": [
             "-----BEGIN ECH CONFIGS-----",
-            "AFf+DQBTAAAgACAFJYRCZAKXi0LALj940P/Rk9HyghmQHgA/4/NuM7uCUwAIAAEA",
+            "AFf+DQBTAAAgACDPkwcped6BMFIzNJOhtAFxKRtW31aVNjMh8TgHuksEfAAIAAEA",
             "AQABAAMAIFstLXBxLXNpZ25hdHVyZS1zY2hlbWVzLWVuYWJsZWRdAAA=",
             "-----END ECH CONFIGS-----"
           ]
@@ -810,18 +455,51 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١١)",
+      "domain_strategy": "prefer_ipv6",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "10-20",
+        "sleep": "0"
+      },
+      "server": "arvancloudstatus.ir",
+      "server_port": 443,
+      "uuid": "4f5f38f2-e659-4901-976b-13fa54544bd6",
+      "tls": {
+        "enabled": true,
+        "server_name": "gbdgtlocnaz1.seyed-ali-khamenei-binamous.site",
+        "alpn": "http/1.1",
+        "min_version": "1.3",
+        "max_version": "1.3",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@azadi_az_inja_migzare",
+        "headers": {
+          "Host": "gbdgtlocnaz1.seyed-ali-khamenei-binamous.site"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § hy2+ech",
-      "server": "2a01:4f9:c012:cece::1",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١٢)",
+      "domain_strategy": "prefer_ipv6",
+      "server": "gbdgtlocnaz2.daiijannapoleon.fun",
       "server_port": 443,
       "obfs": {
         "type": "salamander",
-        "password": "2X2lDkApzb07"
+        "password": "@azadi_az_inja_migzare"
       },
-      "password": "qeUUaVSyGo+C",
+      "password": "4f5f38f2-e659-4901-976b-13fa54544bd6",
       "tls": {
         "enabled": true,
-        "server_name": "alborz.hideandsurf.com",
+        "server_name": "gbdgtlocnaz2.daiijannapoleon.fun",
         "alpn": "h3",
         "min_version": "1.3",
         "max_version": "1.3",
@@ -830,155 +508,7 @@
           "pq_signature_schemes_enabled": true,
           "config": [
             "-----BEGIN ECH CONFIGS-----",
-            "AFf+DQBTAAAgACAFJYRCZAKXi0LALj940P/Rk9HyghmQHgA/4/NuM7uCUwAIAAEA",
-            "AQABAAMAIFstLXBxLXNpZ25hdHVyZS1zY2hlbWVzLWVuYWJsZWRdAAA=",
-            "-----END ECH CONFIGS-----"
-          ]
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § sstls",
-      "detour": "stl-hzfi",
-      "server": "",
-      "server_port": 0,
-      "method": "chacha20-ietf-poly1305",
-      "password": "uf0dRov8wtmLsrGQp8Lv6A==",
-      "udp_over_tcp": true
-    },
-    {
-      "type": "shadowtls",
-      "tag": "stl-hzfi",
-      "server": "37.27.40.21",
-      "server_port": 9443,
-      "version": 3,
-      "password": "aRUUll6QB5N6UYkJLnW4Ag==",
-      "tls": {
-        "enabled": true,
-        "server_name": "blogs.windows.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § sstls",
-      "detour": "stl-hzfiv6",
-      "server": "",
-      "server_port": 0,
-      "method": "chacha20-ietf-poly1305",
-      "password": "uf0dRov8wtmLsrGQp8Lv6A==",
-      "udp_over_tcp": true
-    },
-    {
-      "type": "shadowtls",
-      "tag": "stl-hzfiv6",
-      "server": "2a01:4f9:c012:cece::1",
-      "server_port": 9443,
-      "version": 3,
-      "password": "aRUUll6QB5N6UYkJLnW4Ag==",
-      "tls": {
-        "enabled": true,
-        "server_name": "blogs.windows.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § vl+ws+tls+cdn+frag",
-      "tls_fragment": {
-        "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
-      },
-      "server": "188.114.96.12",
-      "server_port": 443,
-      "uuid": "323f3148-db47-4f7c-a26e-50a53093c261",
-      "tls": {
-        "enabled": true,
-        "server_name": "duckngo.hideandsurf.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fJ4A1dBV",
-        "headers": {
-          "Host": "duckngo.hideandsurf.com"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/ § vl+ws+tls+cdn+frag",
-      "tls_fragment": {
-        "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
-      },
-      "server": "2a06:98c1:3121::c",
-      "server_port": 443,
-      "uuid": "323f3148-db47-4f7c-a26e-50a53093c261",
-      "tls": {
-        "enabled": true,
-        "server_name": "duckngo.hideandsurf.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fJ4A1dBV",
-        "headers": {
-          "Host": "duckngo.hideandsurf.com"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
-      "server": "188.166.43.138",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "Kh4meNeIGetL0stFromIran2024"
-      },
-      "password": "b947d658-8140-4ea0-ba18-23a6d48788bb",
-      "tls": {
-        "enabled": true,
-        "server_name": "dgtlocn-nl.hideandsurf.com",
-        "alpn": "h3",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "ech": {
-          "enabled": true,
-          "pq_signature_schemes_enabled": true,
-          "config": [
-            "-----BEGIN ECH CONFIGS-----",
-            "AFf+DQBTAAAgACBi/mj/3n7AqtnENy7dYtjEAIc21UWexNzeTtTEVoarAQAIAAEA",
+            "AFf+DQBTAAAgACDPkwcped6BMFIzNJOhtAFxKRtW31aVNjMh8TgHuksEfAAIAAEA",
             "AQABAAMAIFstLXBxLXNpZ25hdHVyZS1zY2hlbWVzLWVuYWJsZWRdAAA=",
             "-----END ECH CONFIGS-----"
           ]
@@ -987,18 +517,19 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § 0",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١٣)",
+      "domain_strategy": "prefer_ipv6",
       "tls_fragment": {
         "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
+        "size": "10-20",
+        "sleep": "0"
       },
-      "server": "188.114.96.12",
+      "server": "arvancloudstatus.ir",
       "server_port": 443,
-      "uuid": "b947d658-8140-4ea0-ba18-23a6d48788bb",
+      "uuid": "4f5f38f2-e659-4901-976b-13fa54544bd6",
       "tls": {
         "enabled": true,
-        "server_name": "dgtlocn-nl-cdn.hideandsurf.com",
+        "server_name": "gbdgtlocnaz2.seyed-ali-khamenei-binamous.site",
         "alpn": "http/1.1",
         "min_version": "1.3",
         "max_version": "1.3",
@@ -1009,138 +540,18 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/Kh4meNeIGetL0stFromIran2024",
+        "path": "/@azadi_az_inja_migzare",
         "headers": {
-          "Host": "dgtlocn-nl-cdn.hideandsurf.com"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/",
-      "tls_fragment": {
-        "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
-      },
-      "server": "2a06:98c1:3121::c",
-      "server_port": 443,
-      "uuid": "b947d658-8140-4ea0-ba18-23a6d48788bb",
-      "tls": {
-        "enabled": true,
-        "server_name": "dgtlocn-nl-cdn.hideandsurf.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Kh4meNeIGetL0stFromIran2024",
-        "headers": {
-          "Host": "dgtlocn-nl-cdn.hideandsurf.com"
+          "Host": "gbdgtlocnaz2.seyed-ali-khamenei-binamous.site"
         }
       },
       "packet_encoding": "xudp"
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
-      "server": "24.199.84.113",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "Kh4meNeIGetL0stFromIran2024"
-      },
-      "password": "b947d658-8140-4ea0-ba18-23a6d48788bb",
-      "tls": {
-        "enabled": true,
-        "server_name": "freedom.hideandsurf.com",
-        "alpn": "h3",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "ech": {
-          "enabled": true,
-          "pq_signature_schemes_enabled": true,
-          "config": [
-            "-----BEGIN ECH CONFIGS-----",
-            "AFf+DQBTAAAgACD1ixEyxjexM4m9OTmxqKaX2mYZdyj9RtrbnOqit1mABQAIAAEA",
-            "AQABAAMAIFstLXBxLXNpZ25hdHVyZS1zY2hlbWVzLWVuYWJsZWRdAAA=",
-            "-----END ECH CONFIGS-----"
-          ]
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/ § 0",
-      "tls_fragment": {
-        "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
-      },
-      "server": "188.114.96.12",
-      "server_port": 443,
-      "uuid": "b947d658-8140-4ea0-ba18-23a6d48788bb",
-      "tls": {
-        "enabled": true,
-        "server_name": "iran.hideandsurf.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Kh4meNeIGetL0stFromIran2024",
-        "headers": {
-          "Host": "iran.hideandsurf.com"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝐢𝐩𝐯𝟔\n/",
-      "tls_fragment": {
-        "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
-      },
-      "server": "2a06:98c1:3121::c",
-      "server_port": 443,
-      "uuid": "b947d658-8140-4ea0-ba18-23a6d48788bb",
-      "tls": {
-        "enabled": true,
-        "server_name": "iran.hideandsurf.com",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Kh4meNeIGetL0stFromIran2024",
-        "headers": {
-          "Host": "iran.hideandsurf.com"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈\n/",
-      "server": "152.69.179.155",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١۴)",
+      "domain_strategy": "prefer_ipv6",
+      "server": "auoraz1.daiijannapoleon.fun",
       "server_port": 443,
       "obfs": {
         "type": "salamander",
@@ -1167,8 +578,9 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆 👈 | 𝟐\n/",
-      "server": "158.179.18.187",
+      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈کانال+تلگرام(١۵)",
+      "domain_strategy": "prefer_ipv6",
+      "server": "auoraz2.daiijannapoleon.fun",
       "server_port": 443,
       "up_mbps": 10000,
       "down_mbps": 10000,
@@ -1263,7 +675,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "-NKHSn0ygE09zc2f"
+      "secret": "ZJPcUHdstjKMihG0"
     }
   }
 }
