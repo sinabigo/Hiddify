@@ -1,1 +1,2308 @@
+{
+  "log": {
+    "level": "warn",
+    "output": "box.log",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns-remote",
+        "address": "udp://1.1.1.1",
+        "address_resolver": "dns-direct"
+      },
+      {
+        "tag": "dns-trick-direct",
+        "address": "https://sky.rethinkdns.com/",
+        "detour": "direct-fragment"
+      },
+      {
+        "tag": "dns-direct",
+        "address": "1.1.1.1",
+        "address_resolver": "dns-local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-local",
+        "address": "local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-block",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "domain": [
+          "zula.ir",
+          "www.speedtest.net",
+          "xs.wxtv.cc",
+          "allsms.rozfa.com",
+          "www.visa.com.sg",
+          "nodejs.org",
+          "sefarat24.com"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "domain": "connectivitycheck.gstatic.com",
+        "server": "dns-remote",
+        "rewrite_ttl": 3000
+      },
+      {
+        "rule_set": [
+          "geoip-ir",
+          "geosite-ir"
+        ],
+        "server": "dns-direct"
+      }
+    ],
+    "final": "dns-remote",
+    "static_ips": {
+      "sky.rethinkdns.com": [
+        "104.17.148.22",
+        "104.17.147.22",
+        "2a06:98c1:3120::1",
+        "2a06:98c1:3121::1",
+        "188.114.97.1",
+        "188.114.96.1"
+      ]
+    },
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "mtu": 9000,
+      "inet4_address": "172.19.0.1/28",
+      "inet6_address": "fdfe:dcba:9876::1/126",
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": true,
+      "stack": "mixed",
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 12334,
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "direct",
+      "tag": "dns-in",
+      "listen": "127.0.0.1",
+      "listen_port": 16450
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 0",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 1",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 2",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 3",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 4",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 5",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 6",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 7",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 8",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 9",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 10",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 11",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 12",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 13",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 14",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 15",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 16",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 17",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 18",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 19",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 20",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 21",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 22",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 23",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 24",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 25",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 26",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 27",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 28",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 29",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 30",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 31",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 32",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 33",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 34",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 35",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 36",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 37",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 38",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 39",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 40",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 41",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 42",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 43",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 44",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 45",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 46",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 47",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 48",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 49",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 50",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 51",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 52",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 53",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 54",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 55",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 56",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 57",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 58",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 59",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 60",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 61",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 62",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 63",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 64",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 65",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 66",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 67",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 68",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 69",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 70",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 71",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 72",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 73",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 74",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇬🇧 § 75",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 76",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 77"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 0",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 1",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 2",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 3",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 4",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 5",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 6",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 7",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 8",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 9",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 10",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 11",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 12",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 13",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 14",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 15",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 16",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 17",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 18",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 19",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 20",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 21",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 22",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 23",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 24",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 25",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 26",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 27",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 28",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 29",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 30",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 31",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 32",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 33",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 34",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 35",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 36",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 37",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 38",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 39",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 40",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 41",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 42",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 43",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 44",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 45",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 46",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 47",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 48",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 49",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 50",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 51",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 52",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 53",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 54",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 55",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 56",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 57",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 58",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 59",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 60",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 61",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 62",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 63",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 64",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 65",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 66",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 67",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 68",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 69",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 70",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 71",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 72",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 73",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 74",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇬🇧 § 75",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 76",
+        "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 77"
+      ],
+      "url": "http://connectivitycheck.gstatic.com/generate_204",
+      "interval": "10m0s",
+      "tolerance": 1,
+      "idle_timeout": "30m0s"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 0",
+      "server": "172.64.101.233",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/OhVpn",
+        "headers": {
+          "Host": "mmdv2.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 1",
+      "server": "188.114.97.141",
+      "server_port": 443,
+      "uuid": "d7bbfe83-b037-48ae-996c-b98ed0441ba2",
+      "tls": {
+        "enabled": true,
+        "server_name": "e10c0e4b.oodaeq2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "e10c0e4b.oodaeq2.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 2",
+      "server": "2a01:4f8:c17:eaf8::1",
+      "server_port": 53421,
+      "uuid": "TELEGRAM-ServerNett",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 3",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "uuid": "1f1a45c5-8d95-40d1-9b1d-3f654c7e63d9",
+      "tls": {
+        "enabled": true,
+        "server_name": "alecruiz.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/TELEGRAM-PROXY_MTM/",
+        "headers": {
+          "Host": "alecruiz.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 4",
+      "server": "172.67.161.77",
+      "server_port": 443,
+      "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "linde06.indiavideo.sbs",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "linde06.indiavideo.sbs"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 5",
+      "server": "104.16.190.131",
+      "server_port": 443,
+      "uuid": "17a7bf97-fef5-4101-a5c5-7c730fabeeee",
+      "tls": {
+        "enabled": true,
+        "server_name": "bpb-worker-panel-h5f.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "bpb-worker-panel-h5f.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 6",
+      "server": "104.17.83.58",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mmdv2.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 7",
+      "server": "172.66.46.251",
+      "server_port": 443,
+      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+      "tls": {
+        "enabled": true,
+        "server_name": "bBF9c21A.tECHNeTbpb.paGEs.Dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/telegram-@v2ray_alpha/",
+        "headers": {
+          "Host": "bBF9c21A.tECHNeTbpb.paGEs.Dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 8",
+      "server": "104.19.172.189",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mmdv2.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 9",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "uuid": "1f1a45c5-8d95-40d1-9b1d-3f654c7e63d9",
+      "tls": {
+        "enabled": true,
+        "server_name": "alecruiz.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/mrcU9YCPq4GNDHi4",
+        "headers": {
+          "Host": "alecruiz.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 10",
+      "server": "104.21.46.85",
+      "server_port": 443,
+      "uuid": "9a4bc15d-a7d4-4181-9485-405629c36894",
+      "tls": {
+        "enabled": true,
+        "server_name": "king-ae1.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "android"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/TELEGRAM-MARAMBASHI/",
+        "headers": {
+          "Host": "king-ae1.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 11",
+      "server": "172.67.198.111",
+      "server_port": 443,
+      "uuid": "11e5b771-1d4d-4362-b4b5-e39e75981f01",
+      "tls": {
+        "enabled": true,
+        "server_name": "3e8B07A5.PUb000bpB.PAGes.Dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ZYgm9Gg9QBkAXfbG",
+        "headers": {
+          "Host": "3e8B07A5.PUb000bpB.PAGes.Dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 12",
+      "server": "188.114.97.3",
+      "server_port": 443,
+      "uuid": "fb853741-88ef-4aa0-ba2f-999f04535960",
+      "tls": {
+        "enabled": true,
+        "server_name": "HovEyda-ARIAMEHR-KinG.PAgEs.Dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/JOIN-Proxy_mtm/",
+        "headers": {
+          "Host": "HovEYda-arIamehr-KINg.pAgES.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 13",
+      "server": "188.114.96.3",
+      "server_port": 443,
+      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+      "tls": {
+        "enabled": true,
+        "server_name": "viEEzer-pANeL.paGES.DEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/telegram-@v2ray_alpha/",
+        "headers": {
+          "Host": "vIeEZEr-PaNeL.PAGes.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 14",
+      "server": "104.16.230.219",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Join%20Bede%20Telegram%20----%3E%20@SiNABiGO%20,%20@SiNABiGO%20,%20@SiNABiGO%20,%20@SiNABiGO%20,%20@SiNABiGO%20,%20@SiNABiGO%20,%20@SiNABiGO",
+        "headers": {
+          "Host": "mmdv2.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 15",
+      "server": "188.114.97.3",
+      "server_port": 443,
+      "uuid": "a5542579-59e9-4bd3-8d93-eb609f83e19b",
+      "tls": {
+        "enabled": true,
+        "server_name": "ARiAMEHr-EYQ.PAGeS.deV",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/telegram-@v2ray_alpha/",
+        "headers": {
+          "Host": "ariameHr-Eyq.paGES.Dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 16",
+      "server": "172.67.138.140",
+      "server_port": 443,
+      "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "ivideos.sbs",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "ivideos.sbs"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 17",
+      "server": "104.16.163.59",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mmdv2.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 18",
+      "server": "xs.wxtv.cc",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mmdv2.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 19",
+      "server": "104.18.202.232",
+      "server_port": 443,
+      "uuid": "17a7bf97-fef5-4101-a5c5-7c730fabeeee",
+      "tls": {
+        "enabled": true,
+        "server_name": "bpb-worker-panel-h5f.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "bpb-worker-panel-h5f.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 20",
+      "server": "104.19.7.174",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mmdv2.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 21",
+      "server": "104.18.5.2",
+      "server_port": 2096,
+      "uuid": "85b94f20-e563-498b-9d4b-a75438a51101",
+      "tls": {
+        "enabled": true,
+        "server_name": "VFIvE-teLeGram.PAGEs.Dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/5fz4m1ggihzpkyya",
+        "headers": {
+          "Host": "VFIvE-teLeGram.PAGEs.Dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 22",
+      "server": "allsms.rozfa.com",
+      "server_port": 443,
+      "uuid": "6a89dc04-7781-46fe-b35c-e14a6b6e60b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "test-teSt-tEsT-teSt.pagES.DEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/oy5qsibcJQKRFKJh",
+        "headers": {
+          "Host": "TESt-TEsT-TEST-TEsT.pAGes.dEV"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 23",
+      "server": "188.114.97.3",
+      "server_port": 443,
+      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+      "tls": {
+        "enabled": true,
+        "server_name": "936a99B4.Vde5-MlX81LANeo.pAgES.dEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/kkhhl0gssoz7m6id/zgu1lm1lcmxpbm56lmxpbms=",
+        "headers": {
+          "Host": "936a99B4.Vde5-MlX81LANeo.pAgES.dEv"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 24",
+      "server": "188.114.96.3",
+      "server_port": 443,
+      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+      "tls": {
+        "enabled": true,
+        "server_name": "viEEzer-pANeL.paGES.DEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram-@V2ray_Alpha/",
+        "headers": {
+          "Host": "vIeEZEr-PaNeL.PAGes.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 25",
+      "server": "172.64.111.69",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mmdv2.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 26",
+      "server": "104.19.114.13",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mmdv2.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 27",
+      "server": "188.114.96.2",
+      "server_port": 443,
+      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+      "tls": {
+        "enabled": true,
+        "server_name": "miumiUMadReKoSE.pAgES.dEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/oyafdnkpgfcx0bjg",
+        "headers": {
+          "Host": "miumiUMadReKoSE.pAgES.dEv"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 28",
+      "server": "188.114.96.2",
+      "server_port": 443,
+      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+      "tls": {
+        "enabled": true,
+        "server_name": "miumiUMadReKoSE.pAgES.dEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "MIumIumADrEkOsE.pAGeS.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 29",
+      "server": "172.67.204.39",
+      "server_port": 443,
+      "uuid": "7f3b2f37-819e-49ee-9f5c-215467bfde61",
+      "tls": {
+        "enabled": true,
+        "server_name": "turkmenistan.armanibash.Shop.",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "turkmenistan.armanibash.Shop."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 30",
+      "server": "188.114.97.141",
+      "server_port": 443,
+      "uuid": "d7bbfe83-b037-48ae-996c-b98ed0441ba2",
+      "tls": {
+        "enabled": true,
+        "server_name": "e10c0e4b.oodaeq2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "e10c0e4b.oodaeq2.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 31",
+      "server": "172.67.164.164",
+      "server_port": 443,
+      "uuid": "a1655f51-1e20-4a92-8a11-b7ca30a7a353",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "afrhms07.xfixedfloat.cfd",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "afrhms07.xfixedfloat.cfd"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 32",
+      "server": "172.67.183.220",
+      "server_port": 443,
+      "uuid": "950db6aa-4926-4616-816e-ec0312dcb87b",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "jahfkjha.cfd",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "jahfkjha.cfd"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 33",
+      "server": "172.66.47.126",
+      "server_port": 443,
+      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+      "tls": {
+        "enabled": true,
+        "server_name": "00e463Dc.beSTVPn-4xi.PAgES.dEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/yuyg5ujoovohfscy",
+        "headers": {
+          "Host": "00e463Dc.beSTVPn-4xi.PAgES.dEv"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 34",
+      "server": "104.18.5.2",
+      "server_port": 2096,
+      "uuid": "85b94f20-e563-498b-9d4b-a75438a51101",
+      "tls": {
+        "enabled": true,
+        "server_name": "VFIvE-teLeGram.PAGEs.Dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "VFIvE-teLeGram.PAGEs.Dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 35",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "uuid": "e6aedcd2-24ad-4bdd-82c5-006d84179197",
+      "tls": {
+        "enabled": true,
+        "server_name": "4d3d6f00.garywelch.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Tel-@V2ray_Alpha/",
+        "headers": {
+          "Host": "4d3d6f00.garywelch.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 36",
+      "server": "172.66.47.2",
+      "server_port": 443,
+      "uuid": "bcf50589-9654-4331-93a6-da896914ec47",
+      "tls": {
+        "enabled": true,
+        "server_name": "de4ecf6b.isvphp-4g8.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "de4ecf6b.isvphp-4g8.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 37",
+      "server": "172.67.204.39",
+      "server_port": 443,
+      "uuid": "7f3b2f37-819e-49ee-9f5c-215467bfde61",
+      "tls": {
+        "enabled": true,
+        "server_name": "turkmenistan.armanibash.Shop.",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Tel-@Telegram-------V2rayi_net/",
+        "headers": {
+          "Host": "turkmenistan.armanibash.Shop."
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 38",
+      "server": "172.64.104.152",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mmdv2.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 39",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "uuid": "8b7efacf-8e83-4e51-ab55-1263baccd4b2",
+      "tls": {
+        "enabled": true,
+        "server_name": "7f905f51.garywelch.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Tel-@V2ray_Alpha/",
+        "headers": {
+          "Host": "7f905f51.garywelch.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 40",
+      "server": "172.67.71.160",
+      "server_port": 443,
+      "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "obdii.cfd",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "obdii.cfd"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 41",
+      "server": "172.67.156.27",
+      "server_port": 443,
+      "uuid": "f5a78514-1a94-486e-92a7-3bc9817095a6",
+      "tls": {
+        "enabled": true,
+        "server_name": "nitriding.appreviewcenter.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/nimws",
+        "headers": {
+          "Host": "nitriding.appreviewcenter.com"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 42",
+      "server": "www.visa.com.sg",
+      "server_port": 8443,
+      "uuid": "9a39f63e-28c8-4560-af18-b01b9916ef1b",
+      "tls": {
+        "enabled": true,
+        "server_name": "pardazesh-tgws.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "pardazesh-tgws.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 43",
+      "server": "104.16.181.38",
+      "server_port": 443,
+      "uuid": "7f035a95-4b51-4e0b-8995-59864a9cde22",
+      "tls": {
+        "enabled": true,
+        "server_name": "MSdOnoR.pagEs.dEV",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/R5lApEWHnBpYI2jQ",
+        "headers": {
+          "Host": "mSDONOr.Pages.dEv"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 44",
+      "server": "104.21.34.74",
+      "server_port": 443,
+      "uuid": "d6f79630-aa94-4536-b2ef-899b5acb3b49",
+      "tls": {
+        "enabled": true,
+        "server_name": "unmanliest.appreviewcenter.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/nimws",
+        "headers": {
+          "Host": "unmanliest.appreviewcenter.com"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 45",
+      "server": "104.21.15.36",
+      "server_port": 443,
+      "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "linde06.indiavideo.sbs",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "linde06.indiavideo.sbs"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 46",
+      "server": "104.17.240.120",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mmdv2.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 47",
+      "server": "www.speedtest.net",
+      "server_port": 2096,
+      "uuid": "b41e1631-ceb3-47c9-ba87-c65a46f2f5a8",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpNeRor.SAjadHADadi.WEbsiTe",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "VPnerOr.sajAdHaDaDI.WEbSITe"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 48",
+      "server": "162.159.252.236",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mmdv2.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 49",
+      "server": "172.64.111.69",
+      "server_port": 443,
+      "uuid": "d9eb0df3-3190-4447-86b6-656fe5ff1119",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmdv2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mmdv2.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 50",
+      "server": "188.114.96.3",
+      "server_port": 443,
+      "uuid": "5f726fe3-d82e-4da5-a711-8af0cbb2b682",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/azumase.ren",
+        "headers": {
+          "Host": "b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 51",
+      "server": "188.114.97.3",
+      "server_port": 443,
+      "uuid": "fb853741-88ef-4aa0-ba2f-999f04535960",
+      "tls": {
+        "enabled": true,
+        "server_name": "HovEyda-ARIAMEHR-KinG.PAgEs.Dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/telegram-@v2ray_alpha/",
+        "headers": {
+          "Host": "HovEYda-arIamehr-KINg.pAgES.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 52",
+      "server": "188.114.99.183",
+      "server_port": 443,
+      "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "linde06.indiavideo.sbs",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "linde06.indiavideo.sbs"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 53",
+      "server": "104.18.41.138",
+      "server_port": 8443,
+      "uuid": "1142470b-d8de-4e9d-99f9-dfefbbdb39e0",
+      "tls": {
+        "enabled": true,
+        "server_name": "pardazeshvpn-tg27.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "pardazeshvpn-tg27.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 54",
+      "server": "2606:4700:310c::ac42:2c9b",
+      "server_port": 443,
+      "uuid": "6a89dc04-7781-46fe-b35c-e14a6b6e60b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "tEST-TeST-teST-tEsT.pAgeS.deV",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/UVaKykJPkNEh7Y62",
+        "headers": {
+          "Host": "tEST-teSt-TEst-TEsT.pAGes.DEv"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 55",
+      "server": "188.114.97.3",
+      "server_port": 443,
+      "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "afrhms16v.bestxray.buzz",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "afrhms16v.bestxray.buzz"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 56",
+      "server": "188.114.97.3",
+      "server_port": 443,
+      "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "afrhms16v.bestxray.buzz",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "afrhms16v.bestxray.buzz"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 57",
+      "server": "172.64.103.211",
+      "server_port": 443,
+      "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "glweidf.cfd",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "glweidf.cfd"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 58",
+      "server": "188.114.97.141",
+      "server_port": 443,
+      "uuid": "d7bbfe83-b037-48ae-996c-b98ed0441ba2",
+      "tls": {
+        "enabled": true,
+        "server_name": "e10c0e4b.oodaeq2.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/TELEGRAM-MARAMBASHI/",
+        "headers": {
+          "Host": "e10c0e4b.oodaeq2.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 59",
+      "server": "188.114.96.2",
+      "server_port": 443,
+      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+      "tls": {
+        "enabled": true,
+        "server_name": "miumiUMadReKoSE.pAgES.dEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram@SiNABiGO/",
+        "headers": {
+          "Host": "MIumIumADrEkOsE.pAGeS.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 60",
+      "server": "104.21.9.236",
+      "server_port": 443,
+      "uuid": "62aa5f80-0328-4004-a375-7f5a59df4022",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "hms19.best-tizi.top",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "hms19.best-tizi.top"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 61",
+      "server": "www.speedtest.net",
+      "server_port": 2096,
+      "uuid": "b41e1631-ceb3-47c9-ba87-c65a46f2f5a8",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpNeRor.SAjadHADadi.WEbsiTe",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eOwMtmADY6cWup8R?ed",
+        "headers": {
+          "Host": "VPnerOr.sajAdHaDaDI.WEbSITe"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 62",
+      "server": "188.114.97.210",
+      "server_port": 443,
+      "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "linde06.indiavideo.sbs",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "linde06.indiavideo.sbs"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 63",
+      "server": "172.67.146.10",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "sareikela.com",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "sareikela.com"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 64",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "uuid": "17a7bf97-fef5-4101-a5c5-7c730fabeeee",
+      "tls": {
+        "enabled": true,
+        "server_name": "bpb-worker-panel-h5f.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram@SiNABiGO/",
+        "headers": {
+          "Host": "bpb-worker-panel-h5f.pages.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 65",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "uuid": "17a7bf97-fef5-4101-a5c5-7c730fabeeee",
+      "tls": {
+        "enabled": true,
+        "server_name": "bpb-worker-panel-h5f.pages.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Tel-@Telegram-------V2rayi_net/",
+        "headers": {
+          "Host": "bpb-worker-panel-h5f.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 66",
+      "server": "allsms.rozfa.com",
+      "server_port": 443,
+      "uuid": "6a89dc04-7781-46fe-b35c-e14a6b6e60b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "TeST-TESt-tEst-tESt.PagES.DEV",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/telegram-@v2ray_alpha/",
+        "headers": {
+          "Host": "tEST-tesT-Test-tesT.pAgeS.DEV"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "trojan",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 67",
+      "server": "198.41.220.10",
+      "server_port": 443,
+      "password": "2cba4104747d49d18319e5ade1b93ab5",
+      "tls": {
+        "enabled": true,
+        "server_name": "jobscareerforstudent.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/6b777a91",
+        "headers": {
+          "Host": "jobscareerforstudent.com"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 68",
+      "server": "104.21.83.108",
+      "server_port": 443,
+      "uuid": "6c168fcc-2231-4f3b-8c1e-f6391692df4a",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "hms02.fxiaomi.sbs",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/link",
+        "headers": {
+          "Host": "hms02.fxiaomi.sbs"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 69",
+      "server": "172.67.170.11",
+      "server_port": 443,
+      "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "linde06.indiavideo.sbs",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "linde06.indiavideo.sbs"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 70",
+      "server": "nodejs.org",
+      "server_port": 443,
+      "uuid": "de543079-9ff5-4dce-8b68-97f61685efd7",
+      "tls": {
+        "enabled": true,
+        "server_name": "hdfy1c1.cpiforpersia.uk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/LNGeLLJXXIlSdZMqnuxG",
+        "headers": {
+          "Host": "hdfy1c1.cpiforpersia.uk"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 71",
+      "server": "2a01:7e01::f03c:94ff:fe2a:b2d",
+      "server_port": 5011,
+      "uuid": "911e7942-4c0a-47f5-95e1-25740be19043",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 72",
+      "server": "sefarat24.com",
+      "server_port": 443,
+      "uuid": "6a89dc04-7781-46fe-b35c-e14a6b6e60b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "tESt-tEst-TesT-Test.paGEs.DEV",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/telegram-@v2ray_alpha/",
+        "headers": {
+          "Host": "TEsT-teSt-test-Test.pAgES.DeV"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 73",
+      "server": "172.67.207.26",
+      "server_port": 443,
+      "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "glweidf.sbs",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "glweidf.sbs"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇺🇸 § 74",
+      "server": "188.114.99.134",
+      "server_port": 443,
+      "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "linde06.indiavideo.sbs",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "linde06.indiavideo.sbs"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇬🇧 § 75",
+      "server": "zula.ir",
+      "server_port": 8443,
+      "uuid": "2725d136-d620-4687-9752-be65774f2914",
+      "tls": {
+        "enabled": true,
+        "server_name": "fragment.mzolfaghari.homes",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "Freehomesvpn",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎§ 76",
+      "server": "2a0b:4140:659a:4::4",
+      "server_port": 33000,
+      "uuid": "a60d236d-be21-40f9-8c02-54caa635124d",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.speedtest.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JrN7nZEbUeBJFHTAKwtz5Dmd10SGgA8UCHEMLA2xOg0",
+          "short_id": "be7f13dd"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "b",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vmess",
+      "tag": "Channel:@𝐒𝐢𝐍𝐀𝐁𝐢𝐆𝐎🇨🇦 § 77",
+      "server": "172.67.170.13",
+      "server_port": 443,
+      "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "glweidf.sbs",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "glweidf.sbs"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "direct",
+      "tag": "direct-fragment",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "50-100",
+        "sleep": "10-20"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "bypass"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "rule_set": [
+          "geoip-ir",
+          "geosite-ir"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "inbound": "dns-in",
+        "outbound": "dns-out"
+      },
+      {
+        "port": 53,
+        "outbound": "dns-out"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "process_name": [
+          "Hiddify",
+          "Hiddify.exe",
+          "HiddifyCli",
+          "HiddifyCli.exe"
+        ],
+        "outbound": "bypass"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geoip-ir.srs",
+        "update_interval": "120h0m0s"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geosite-ir.srs",
+        "update_interval": "120h0m0s"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "clash.db"
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:16756",
+      "secret": "_zUMD2No0VOOzdc_"
+    }
+  }
+}
 
