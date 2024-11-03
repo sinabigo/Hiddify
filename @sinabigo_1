@@ -1,7 +1,6 @@
 {
   "log": {
     "level": "warn",
-    "output": "box.log",
     "timestamp": true
   },
   "dns": {
@@ -35,37 +34,44 @@
     "rules": [
       {
         "domain": [
-          "arvancloudstatus.ir",
-          "atpqaz.daiijannapoleon.fun",
-          "all-in.daiijannapoleon.fun",
-          "h.88981401.xyz"
+          "malaysia.fqjc.store",
+          "southkorea.fqjc.store",
+          "hongkongload.fqjc.store",
+          "singaporeload.fqjc.store",
+          "usaload.fqjc.store",
+          "moscow.fqjc.store",
+          "japan01.fqjc.store",
+          "lasvegas-unitedstates02.fqjc.store",
+          "singapore.fqjc.store"
         ],
-        "server": "dns-direct"
-      },
-      {
-        "domain_suffix": ".ir",
-        "geosite": "ir",
         "server": "dns-direct"
       },
       {
         "domain": "cp.cloudflare.com",
         "server": "dns-remote",
         "rewrite_ttl": 3000
+      },
+      {
+        "domain_suffix": ".ir",
+        "server": "dns-direct"
+      },
+      {
+        "rule_set": [
+          "geoip-ir",
+          "geosite-ir"
+        ],
+        "server": "dns-direct"
       }
     ],
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.97.3",
-        "188.114.96.3",
-        "2a06:98c1:3121::3",
-        "2a06:98c1:3120::3",
         "104.17.148.22",
         "104.17.147.22",
-        "188.114.97.0",
-        "188.114.96.0",
-        "2a06:98c1:3120::",
-        "2a06:98c1:3121::"
+        "188.114.96.3",
+        "188.114.97.3",
+        "2a06:98c1:3121::6",
+        "2a06:98c1:3120::6"
       ]
     },
     "independent_cache": true
@@ -76,19 +82,17 @@
       "tag": "tun-in",
       "mtu": 9000,
       "inet4_address": "172.19.0.1/28",
-      "inet6_address": "fdfe:dcba:9876::1/126",
       "auto_route": true,
       "strict_route": true,
       "endpoint_independent_nat": true,
-      "stack": "mixed",
-      "sniff": true,
-      "sniff_override_destination": true
+      "stack": "gvisor",
+      "sniff": true
     },
     {
       "type": "mixed",
       "tag": "mixed-in",
       "listen": "127.0.0.1",
-      "listen_port": 2334,
+      "listen_port": 12334,
       "sniff": true,
       "sniff_override_destination": true
     },
@@ -96,7 +100,7 @@
       "type": "direct",
       "tag": "dns-in",
       "listen": "127.0.0.1",
-      "listen_port": 6450
+      "listen_port": 16450
     }
   ],
   "outbounds": [
@@ -105,212 +109,388 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🎷■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-        "🎸■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-        "🎹■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-        "🥁■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-        "🎻■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-        "🪕■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆"
+        "官网 fqjc.xyz",
+        "全部超时请更换软件",
+        "无法更新订阅请关闭代理",
+        "香港 01 负载聚合",
+        "香港 02 负载聚合",
+        "香港 03 负载聚合",
+        "新加坡 01 负载聚合",
+        "新加坡 02 负载聚合",
+        "新加坡 03 负载聚合",
+        "美国 01 负载聚合",
+        "美国 02 负载聚合",
+        "美国 03 负载聚合",
+        "俄罗斯 莫斯科 01",
+        "美国 拉斯维加斯 01",
+        "日本 东京 01",
+        "新加坡 01",
+        "马来西亚 01"
       ],
-      "default": "auto"
+      "default": "auto",
+      "interrupt_exist_connections": true
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🎷■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-        "🎸■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-        "🎹■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-        "🥁■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-        "🎻■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-        "🪕■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆"
+        "官网 fqjc.xyz",
+        "全部超时请更换软件",
+        "无法更新订阅请关闭代理",
+        "香港 01 负载聚合",
+        "香港 02 负载聚合",
+        "香港 03 负载聚合",
+        "新加坡 01 负载聚合",
+        "新加坡 02 负载聚合",
+        "新加坡 03 负载聚合",
+        "美国 01 负载聚合",
+        "美国 02 负载聚合",
+        "美国 03 负载聚合",
+        "俄罗斯 莫斯科 01",
+        "美国 拉斯维加斯 01",
+        "日本 东京 01",
+        "新加坡 01",
+        "马来西亚 01"
       ],
-      "url": "http://cp.cloudflare.com/",
+      "url": "http://cp.cloudflare.com",
       "interval": "10m0s",
-      "idle_timeout": "1h40m0s"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🎷■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-      "domain_strategy": "prefer_ipv6",
-      "server": "h.88981401.xyz",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "@ln2ray-5bdf790f-0af2-4481-a624-41b66e7e3489"
-      },
-      "password": "@ln2ray-5bdf790f-0af2-4481-a624-41b66e7e3489",
-      "tls": {
-        "enabled": true,
-        "server_name": "let-him-cook.ircp.online",
-        "alpn": "h3",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "ech": {
-          "enabled": true,
-          "pq_signature_schemes_enabled": true,
-          "config": [
-            "-----BEGIN ECH CONFIGS-----",
-            "AFf+DQBTAAAgACCc2kqEYGusiYc5fj1smMpQJYQLckpS1bgOaCDLvoiofgAIAAEA",
-            "AQABAAMAIFstLXBxLXNpZ25hdHVyZS1zY2hlbWVzLWVuYWJsZWRdAAA=",
-            "-----END ECH CONFIGS-----"
-          ]
-        }
-      }
+      "tolerance": 1,
+      "idle_timeout": "30m0s",
+      "interrupt_exist_connections": true
     },
     {
       "type": "vless",
-      "tag": "🎸■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-      "domain_strategy": "prefer_ipv6",
-      "tls_fragment": {
-        "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
-      },
-      "server": "arvancloudstatus.ir",
-      "server_port": 443,
-      "uuid": "5bdf790f-0af2-4481-a624-41b66e7e3489",
+      "tag": "官网 fqjc.xyz",
+      "server": "southkorea.fqjc.store",
+      "server_port": 63499,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.ircp.online",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
+        "server_name": "python.org",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
         }
       },
-      "transport": {
-        "type": "ws",
-        "path": "/@ln2ray",
-        "headers": {
-          "Host": "cdn.ircp.online"
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "全部超时请更换软件",
+      "server": "southkorea.fqjc.store",
+      "server_port": 63499,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "无法更新订阅请关闭代理",
+      "server": "southkorea.fqjc.store",
+      "server_port": 63499,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "香港 01 负载聚合",
+      "server": "hongkongload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "香港 02 负载聚合",
+      "server": "hongkongload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "香港 03 负载聚合",
+      "server": "hongkongload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "新加坡 01 负载聚合",
+      "server": "singaporeload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "新加坡 02 负载聚合",
+      "server": "singaporeload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "新加坡 03 负载聚合",
+      "server": "singaporeload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "美国 01 负载聚合",
+      "server": "usaload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "美国 02 负载聚合",
+      "server": "usaload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "美国 03 负载聚合",
+      "server": "usaload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "俄罗斯 莫斯科 01",
+      "server": "moscow.fqjc.store",
+      "server_port": 20000,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
         }
       },
       "packet_encoding": "xudp"
     },
     {
       "type": "hysteria2",
-      "tag": "🎹■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-      "domain_strategy": "prefer_ipv6",
-      "server": "atpqaz.daiijannapoleon.fun",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "FBrEbtKlW48Z"
-      },
-      "password": "@azadi_az_inja_migzare",
+      "tag": "美国 拉斯维加斯 01",
+      "server": "lasvegas-unitedstates02.fqjc.store",
+      "server_port": 20000,
+      "password": "ccecbc11-473b-415e-b846-e5f193f42843",
       "tls": {
         "enabled": true,
-        "server_name": "sabalan.seyed-ali-khamenei-binamous.site",
-        "alpn": "h3",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "ech": {
-          "enabled": true,
-          "pq_signature_schemes_enabled": true,
-          "config": [
-            "-----BEGIN ECH CONFIGS-----",
-            "AFf+DQBTAAAgACDPkwcped6BMFIzNJOhtAFxKRtW31aVNjMh8TgHuksEfAAIAAEA",
-            "AQABAAMAIFstLXBxLXNpZ25hdHVyZS1zY2hlbWVzLWVuYWJsZWRdAAA=",
-            "-----END ECH CONFIGS-----"
-          ]
-        }
+        "server_name": "bing.com",
+        "insecure": true
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🥁■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-      "domain_strategy": "prefer_ipv6",
-      "tls_fragment": {
-        "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
-      },
-      "server": "arvancloudstatus.ir",
-      "server_port": 443,
-      "uuid": "4f5f38f2-e659-4901-976b-13fa54544bd6",
-      "tls": {
-        "enabled": true,
-        "server_name": "pathfinder.seyed-ali-khamenei-binamous.site",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/https://t.me/javidnamaniran",
-        "headers": {
-          "Host": "pathfinder.seyed-ali-khamenei-binamous.site"
-        }
-      },
-      "packet_encoding": "xudp"
     },
     {
       "type": "hysteria2",
-      "tag": "🎻■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-      "domain_strategy": "prefer_ipv6",
-      "server": "all-in.daiijannapoleon.fun",
-      "server_port": 443,
-      "obfs": {
-        "type": "salamander",
-        "password": "@azadi_az_inja_migzare-29cf96e6-8008-4233-a883-4b5daeb72309"
-      },
-      "password": "@azadi_az_inja_migzare-29cf96e6-8008-4233-a883-4b5daeb72309",
+      "tag": "日本 东京 01",
+      "server": "japan01.fqjc.store",
+      "server_port": 20000,
+      "password": "ccecbc11-473b-415e-b846-e5f193f42843",
       "tls": {
         "enabled": true,
-        "server_name": "all-in.seyed-ali-khamenei-binamous.site",
-        "alpn": "h3",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "ech": {
-          "enabled": true,
-          "pq_signature_schemes_enabled": true,
-          "config": [
-            "-----BEGIN ECH CONFIGS-----",
-            "AFf+DQBTAAAgACDvMP0oe54OZPicZE/p+nkwrcMOAeWte99Ye2i7BbTwHgAIAAEA",
-            "AQABAAMAIFstLXBxLXNpZ25hdHVyZS1zY2hlbWVzLWVuYWJsZWRdAAA=",
-            "-----END ECH CONFIGS-----"
-          ]
-        }
+        "server_name": "bing.com",
+        "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🪕■ @𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆",
-      "domain_strategy": "prefer_ipv6",
-      "tls_fragment": {
-        "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
-      },
-      "server": "arvancloudstatus.ir",
-      "server_port": 443,
-      "uuid": "29cf96e6-8008-4233-a883-4b5daeb72309",
+      "type": "hysteria2",
+      "tag": "新加坡 01",
+      "server": "singapore.fqjc.store",
+      "server_port": 30000,
+      "password": "ccecbc11-473b-415e-b846-e5f193f42843",
       "tls": {
         "enabled": true,
-        "server_name": "all-in-cdn.seyed-ali-khamenei-binamous.site",
-        "alpn": "http/1.1",
-        "min_version": "1.3",
-        "max_version": "1.3",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@azadi_az_inja_migzare",
-        "headers": {
-          "Host": "all-in-cdn.seyed-ali-khamenei-binamous.site"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "马来西亚 01",
+      "server": "malaysia.fqjc.store",
+      "server_port": 30000,
+      "password": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
     },
     {
       "type": "dns",
@@ -325,8 +505,8 @@
       "tag": "direct-fragment",
       "tls_fragment": {
         "enabled": true,
-        "size": "20-40",
-        "sleep": "4-8"
+        "size": "10-30",
+        "sleep": "2-8"
       }
     },
     {
@@ -339,12 +519,6 @@
     }
   ],
   "route": {
-    "geoip": {
-      "path": "geo-assets/sagernet-sing-geoip-geoip.db"
-    },
-    "geosite": {
-      "path": "geo-assets/sagernet-sing-geosite-geosite.db"
-    },
     "rules": [
       {
         "inbound": "dns-in",
@@ -355,18 +529,31 @@
         "outbound": "dns-out"
       },
       {
-        "clash_mode": "Direct",
+        "domain_suffix": ".ir",
         "outbound": "direct"
       },
       {
-        "clash_mode": "Global",
-        "outbound": "select"
+        "rule_set": [
+          "geoip-ir",
+          "geosite-ir"
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geoip-ir.srs",
+        "update_interval": "120h0m0s"
       },
       {
-        "domain_suffix": ".ir",
-        "geosite": "ir",
-        "geoip": "ir",
-        "outbound": "bypass"
+        "type": "remote",
+        "tag": "geosite-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geosite-ir.srs",
+        "update_interval": "120h0m0s"
       }
     ],
     "final": "select",
@@ -379,8 +566,8 @@
       "path": "clash.db"
     },
     "clash_api": {
-      "external_controller": "127.0.0.1:6756",
-      "secret": "uTwOXuUMWrwKTKJZ"
+      "external_controller": "127.0.0.1:16756",
+      "secret": "TVkki-YViszdcoLc"
     }
   }
 }
