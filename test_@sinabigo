@@ -1,0 +1,456 @@
+{
+  "log": {
+    "level": "warn",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns-remote",
+        "address": "udp://1.1.1.1",
+        "address_resolver": "dns-direct"
+      },
+      {
+        "tag": "dns-trick-direct",
+        "address": "https://sky.rethinkdns.com/",
+        "detour": "direct-fragment"
+      },
+      {
+        "tag": "dns-direct",
+        "address": "1.1.1.1",
+        "address_resolver": "dns-local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-local",
+        "address": "local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-block",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "domain": [
+          "aus1.chuanshiqi.top",
+          "jp2.chuanshiqi.top",
+          "eu1.chuanshiqi.top",
+          "cf.090227.xyz",
+          "us1.chuanshiqi.top",
+          "il.chuanshiqi.top",
+          "uk1.chuanshiqi.top",
+          "kr1.chuanshiqi.top",
+          "kr2.chuanshiqi.top",
+          "jp1.chuanshiqi.top"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "domain": "cp.cloudflare.com",
+        "server": "dns-remote",
+        "rewrite_ttl": 3000
+      },
+      {
+        "domain_suffix": ".ir",
+        "server": "dns-direct"
+      },
+      {
+        "rule_set": [
+          "geoip-ir",
+          "geosite-ir"
+        ],
+        "server": "dns-direct"
+      }
+    ],
+    "final": "dns-remote",
+    "static_ips": {
+      "sky.rethinkdns.com": [
+        "104.17.147.22",
+        "104.17.148.22",
+        "188.114.96.6",
+        "188.114.97.6",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3"
+      ]
+    },
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "mtu": 9000,
+      "inet4_address": "172.19.0.1/28",
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": true,
+      "stack": "gvisor",
+      "sniff": true
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 12334,
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "direct",
+      "tag": "dns-in",
+      "listen": "127.0.0.1",
+      "listen_port": 16450
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【14】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【12】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【6】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【11】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【13】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【10】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【5】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【9】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【7】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【8】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【1】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【2】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【3】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【4】"
+      ],
+      "default": "auto",
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【14】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【12】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【6】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【11】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【13】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【10】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【5】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【9】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【7】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【8】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【1】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【2】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【3】",
+        "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【4】"
+      ],
+      "url": "http://cp.cloudflare.com",
+      "interval": "10m0s",
+      "tolerance": 1,
+      "idle_timeout": "30m0s",
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "vmess",
+      "tag": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【14】",
+      "server": "cf.090227.xyz",
+      "server_port": 443,
+      "uuid": "3dad6bbb-5acd-4389-ab91-45555c34e2f9",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl.shidianban.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "nl.shidianban.top"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【12】",
+      "server": "kr1.chuanshiqi.top",
+      "server_port": 21456,
+      "password": "3dad6bbb-5acd-4389-ab91-45555c34e2f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【6】",
+      "server": "kr2.chuanshiqi.top",
+      "server_port": 21456,
+      "password": "3dad6bbb-5acd-4389-ab91-45555c34e2f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "wwwbing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【11】",
+      "server": "cf.090227.xyz",
+      "server_port": 443,
+      "uuid": "3dad6bbb-5acd-4389-ab91-45555c34e2f9",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "sa.shidianban.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sa.shidianban.top"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【13】",
+      "server": "us1.chuanshiqi.top",
+      "server_port": 21453,
+      "password": "3dad6bbb-5acd-4389-ab91-45555c34e2f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【10】",
+      "server": "cf.090227.xyz",
+      "server_port": 443,
+      "uuid": "3dad6bbb-5acd-4389-ab91-45555c34e2f9",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg1.shidianban.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sg1.shidianban.top"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【5】",
+      "server": "cf.090227.xyz",
+      "server_port": 443,
+      "uuid": "3dad6bbb-5acd-4389-ab91-45555c34e2f9",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "ksa.shidianban.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ksa.shidianban.top"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【9】",
+      "server": "il.chuanshiqi.top",
+      "server_port": 21453,
+      "password": "3dad6bbb-5acd-4389-ab91-45555c34e2f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【7】",
+      "server": "cf.090227.xyz",
+      "server_port": 443,
+      "uuid": "3dad6bbb-5acd-4389-ab91-45555c34e2f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "fr1.shidianban.top",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "fr1.shidianban.top"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【8】",
+      "server": "aus1.chuanshiqi.top",
+      "server_port": 21452,
+      "password": "3dad6bbb-5acd-4389-ab91-45555c34e2f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【1】",
+      "server": "jp1.chuanshiqi.top",
+      "server_port": 21453,
+      "password": "3dad6bbb-5acd-4389-ab91-45555c34e2f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【2】",
+      "server": "jp2.chuanshiqi.top",
+      "server_port": 21453,
+      "password": "3dad6bbb-5acd-4389-ab91-45555c34e2f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【3】",
+      "server": "uk1.chuanshiqi.top",
+      "server_port": 21454,
+      "password": "3dad6bbb-5acd-4389-ab91-45555c34e2f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝔹𝕚𝔾𝕆👈🏻کانال+تلگرام【4】",
+      "server": "eu1.chuanshiqi.top",
+      "server_port": 21452,
+      "password": "3dad6bbb-5acd-4389-ab91-45555c34e2f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "direct",
+      "tag": "direct-fragment",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "10-30",
+        "sleep": "2-8"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "bypass"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "inbound": "dns-in",
+        "outbound": "dns-out"
+      },
+      {
+        "port": 53,
+        "outbound": "dns-out"
+      },
+      {
+        "domain_suffix": ".ir",
+        "outbound": "direct"
+      },
+      {
+        "rule_set": [
+          "geoip-ir",
+          "geosite-ir"
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geoip-ir.srs",
+        "update_interval": "120h0m0s"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geosite-ir.srs",
+        "update_interval": "120h0m0s"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "clash.db"
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:16756",
+      "secret": "x7l06PEDEh1bR4tj"
+    }
+  }
+}
