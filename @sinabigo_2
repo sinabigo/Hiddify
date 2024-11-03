@@ -1,1 +1,573 @@
-https://sub.fqjc.store/api/jiasu?token=e552c82f0da8ff045af9923d08ad7281
+{
+  "log": {
+    "level": "warn",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns-remote",
+        "address": "udp://1.1.1.1",
+        "address_resolver": "dns-direct"
+      },
+      {
+        "tag": "dns-trick-direct",
+        "address": "https://sky.rethinkdns.com/",
+        "detour": "direct-fragment"
+      },
+      {
+        "tag": "dns-direct",
+        "address": "1.1.1.1",
+        "address_resolver": "dns-local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-local",
+        "address": "local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-block",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "domain": [
+          "usaload.fqjc.store",
+          "lasvegas-unitedstates02.fqjc.store",
+          "malaysia.fqjc.store",
+          "southkorea.fqjc.store",
+          "singaporeload.fqjc.store",
+          "moscow.fqjc.store",
+          "japan01.fqjc.store",
+          "singapore.fqjc.store",
+          "hongkongload.fqjc.store"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "domain": "cp.cloudflare.com",
+        "server": "dns-remote",
+        "rewrite_ttl": 3000
+      },
+      {
+        "domain_suffix": ".ir",
+        "server": "dns-direct"
+      },
+      {
+        "rule_set": [
+          "geoip-ir",
+          "geosite-ir"
+        ],
+        "server": "dns-direct"
+      }
+    ],
+    "final": "dns-remote",
+    "static_ips": {
+      "sky.rethinkdns.com": [
+        "104.17.147.22",
+        "104.17.148.22",
+        "188.114.96.3",
+        "188.114.97.3",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3"
+      ]
+    },
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "mtu": 9000,
+      "inet4_address": "172.19.0.1/28",
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": true,
+      "stack": "gvisor",
+      "sniff": true
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 12334,
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "direct",
+      "tag": "dns-in",
+      "listen": "127.0.0.1",
+      "listen_port": 16450
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "官网 fqjc.xyz",
+        "全部超时请更换软件",
+        "无法更新订阅请关闭代理",
+        "香港 01 负载聚合",
+        "香港 02 负载聚合",
+        "香港 03 负载聚合",
+        "新加坡 01 负载聚合",
+        "新加坡 02 负载聚合",
+        "新加坡 03 负载聚合",
+        "美国 01 负载聚合",
+        "美国 02 负载聚合",
+        "美国 03 负载聚合",
+        "俄罗斯 莫斯科 01",
+        "美国 拉斯维加斯 01",
+        "日本 东京 01",
+        "新加坡 01",
+        "马来西亚 01"
+      ],
+      "default": "auto",
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "官网 fqjc.xyz",
+        "全部超时请更换软件",
+        "无法更新订阅请关闭代理",
+        "香港 01 负载聚合",
+        "香港 02 负载聚合",
+        "香港 03 负载聚合",
+        "新加坡 01 负载聚合",
+        "新加坡 02 负载聚合",
+        "新加坡 03 负载聚合",
+        "美国 01 负载聚合",
+        "美国 02 负载聚合",
+        "美国 03 负载聚合",
+        "俄罗斯 莫斯科 01",
+        "美国 拉斯维加斯 01",
+        "日本 东京 01",
+        "新加坡 01",
+        "马来西亚 01"
+      ],
+      "url": "http://cp.cloudflare.com",
+      "interval": "10m0s",
+      "tolerance": 1,
+      "idle_timeout": "30m0s",
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "vless",
+      "tag": "官网 fqjc.xyz",
+      "server": "southkorea.fqjc.store",
+      "server_port": 63499,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "全部超时请更换软件",
+      "server": "southkorea.fqjc.store",
+      "server_port": 63499,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "无法更新订阅请关闭代理",
+      "server": "southkorea.fqjc.store",
+      "server_port": 63499,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "香港 01 负载聚合",
+      "server": "hongkongload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "香港 02 负载聚合",
+      "server": "hongkongload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "香港 03 负载聚合",
+      "server": "hongkongload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "新加坡 01 负载聚合",
+      "server": "singaporeload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "新加坡 02 负载聚合",
+      "server": "singaporeload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "新加坡 03 负载聚合",
+      "server": "singaporeload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "美国 01 负载聚合",
+      "server": "usaload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "美国 02 负载聚合",
+      "server": "usaload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "美国 03 负载聚合",
+      "server": "usaload.fqjc.store",
+      "server_port": 23232,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "俄罗斯 莫斯科 01",
+      "server": "moscow.fqjc.store",
+      "server_port": 20000,
+      "uuid": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OLypQHKPj6qxZf89ByjX-6_0Xh4mcMLwbuJ7grxaNk8",
+          "short_id": "c20d67f3"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "美国 拉斯维加斯 01",
+      "server": "lasvegas-unitedstates02.fqjc.store",
+      "server_port": 20000,
+      "password": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "日本 东京 01",
+      "server": "japan01.fqjc.store",
+      "server_port": 20000,
+      "password": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "新加坡 01",
+      "server": "singapore.fqjc.store",
+      "server_port": 30000,
+      "password": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "马来西亚 01",
+      "server": "malaysia.fqjc.store",
+      "server_port": 30000,
+      "password": "ccecbc11-473b-415e-b846-e5f193f42843",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "direct",
+      "tag": "direct-fragment",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "10-30",
+        "sleep": "2-8"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "bypass"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "inbound": "dns-in",
+        "outbound": "dns-out"
+      },
+      {
+        "port": 53,
+        "outbound": "dns-out"
+      },
+      {
+        "domain_suffix": ".ir",
+        "outbound": "direct"
+      },
+      {
+        "rule_set": [
+          "geoip-ir",
+          "geosite-ir"
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geoip-ir.srs",
+        "update_interval": "120h0m0s"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geosite-ir.srs",
+        "update_interval": "120h0m0s"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "clash.db"
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:16756",
+      "secret": "TJINmVgxF6apzjvp"
+    }
+  }
+}
