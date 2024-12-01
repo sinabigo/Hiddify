@@ -37,26 +37,9 @@
     "rules": [
       {
         "domain": [
-          "ru.pianyi.info",
-          "oracle-arm-frankfurt1.lanmaoyun.icu",
-          "nmehw.kovmk.website",
-          "ahkt.sulink.one",
-          "bl01.sulink.one",
           "35f235a.surfcat.store",
-          "awer13asd3.surfcat.store",
-          "oracle-arm-london1.lanmaoyun.icu",
-          "oracle-amd-san-jose2.lanmaoyun.icu",
           "jostar-data.nl",
-          "us05.sulink.one",
-          "us02.sulink.one",
-          "oracle-amd-osaka1.lanmaoyun.icu",
-          "oracle-amd-tokyo1.lanmaoyun.icu",
-          "oracle-amd-singapore1.lanmaoyun.icu",
-          "oracle-arm-seoul1.lanmaoyun.icu",
-          "sg07v6.sulink.one",
-          "fr09.sulian.life",
-          "oracle-arm-chuncheon2.lanmaoyun.icu",
-          "sg03v6.sulink.one",
+          "awer13asd3.surfcat.store",
           "35afq4514.surfcat.store",
           "35asfq3t.surfcat.store",
           "quran.mci.ai"
@@ -85,8 +68,8 @@
       "sky.rethinkdns.com": [
         "104.17.147.22",
         "104.17.148.22",
-        "2a06:98c1:3122::",
         "2a06:98c1:3123::",
+        "2a06:98c1:3122::",
         "188.114.98.0",
         "188.114.99.0"
       ]
@@ -129,56 +112,21 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "Channel id: @SiNABiGO🇷🇺 § 0",
-        "Channel id: @SiNABiGO🇷🇺 § 1",
-        "Channel id: @SiNABiGO🇯🇵 § 2",
-        "Channel id: @SiNABiGO🇷🇺 § 3",
-        "Channel id: @SiNABiGO🇷🇺 § 4",
-        "Channel id: @SiNABiGO🇯🇵 § 5",
-        "Channel id: @SiNABiGO🇯🇵 § 6",
-        "Channel id: @SiNABiGO🇩🇪 § 7",
-        "Channel id: @SiNABiGO🇭🇰 § 8",
-        "Channel id: @SiNABiGO🇭🇰 § 9",
-        "Channel id: @SiNABiGO🇸🇬 § 10",
-        "Channel id: @SiNABiGO🇷🇺 § 11",
-        "Channel id: @SiNABiGO🇸🇬 § 12",
-        "Channel id: @SiNABiGO🇭🇰 § 13",
-        "Channel id: @SiNABiGO🇷🇺 § 14",
-        "Channel id: @SiNABiGO🇨🇭 § 15",
-        "Channel id: @SiNABiGO🇰🇷 § 16",
-        "Channel id: @SiNABiGO🇬🇧 § 17",
-        "Channel id: @SiNABiGO🇸🇬 § 18",
-        "Channel id: @SiNABiGO🇸🇬 § 19",
-        "Channel id: @SiNABiGO🇰🇷 § 20",
-        "Channel id: @SiNABiGO🇷🇺 § 21",
-        "Channel id: @SiNABiGO🇪🇺 § 22",
-        "Channel id: @SiNABiGO🇭🇰 § 23",
-        "Channel id: @SiNABiGO🇫🇷 § 24",
-        "Channel id: @SiNABiGO🇺🇸 § 25",
-        "Channel id: @SiNABiGO🇩🇪 § 26",
-        "Channel id: @SiNABiGO🇷🇺 § 27",
-        "Channel id: @SiNABiGO🇸🇬 § 28",
-        "Channel id: @SiNABiGO🇺🇸 § 29",
-        "Channel id: @SiNABiGO🇺🇸 § 30",
-        "Channel id: @SiNABiGO🇷🇺 § 31",
-        "Channel id: @SiNABiGO🇵🇱 § 32",
-        "Channel id: @SiNABiGO🇩🇪 § 33",
-        "Channel id: @SiNABiGO🇩🇪 § 34",
-        "Channel id: @SiNABiGO🇩🇪 § 35",
-        "Channel id: @SiNABiGO🇩🇪 § 36",
-        "Channel id: @SiNABiGO🇩🇪 § 37",
-        "Channel id: @SiNABiGO🇩🇪 § 38",
-        "Channel id: @SiNABiGO🇺🇲 § 39",
-        "Channel id: @SiNABiGO🇩🇪 § 40",
-        "Channel id: @SiNABiGO🇦🇹 § 41",
-        "Channel id: @SiNABiGO🇺🇸 § 42",
-        "Channel id: @SiNABiGO🇩🇪 § 43",
-        "Channel id: @SiNABiGO🇺🇲 § 44",
-        "Channel id: @SiNABiGO🇹🇷 § 45",
-        "Channel id: @SiNABiGO🇩🇪 § 46",
-        "Channel id: @SiNABiGO🇸🇪 § 47",
-        "Channel id: @SiNABiGO🇷🇺 § 48",
-        "Channel id: @SiNABiGO🇫🇮 § 49"
+        "¹Channel: @SiNABiGO § 0",
+        "⁸Channel: @SiNABiGO 🇩🇪 § 1",
+        "²Channel: @SiNABiGO § 2",
+        "³Channel: @SiNABiGO § 3",
+        "⁹Channel: @SiNABiGO 🇩🇪 § 4",
+        "⁴Channel: @SiNABiGO § 5",
+        "⁵Channel: @SiNABiGO § 6",
+        "¹⁰Channel: @SiNABiGO 🇩🇪 § 7",
+        "⁷Channel: @SiNABiGO 🇦🇹 § 8",
+        "¹⁵Channel: @SiNABiGO 🇺🇸 § 9",
+        "¹¹Channel: @SiNABiGO 🇩🇪 § 10",
+        "⁶Channel: @SiNABiGO § 11",
+        "¹⁴Channel: @SiNABiGO 🇹🇷 § 12",
+        "¹²Channel: @SiNABiGO 🇩🇪 § 13",
+        "¹³Channel: @SiNABiGO 🇸🇪 § 14"
       ],
       "default": "auto",
       "interrupt_exist_connections": true
@@ -187,56 +135,21 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "Channel id: @SiNABiGO🇷🇺 § 0",
-        "Channel id: @SiNABiGO🇷🇺 § 1",
-        "Channel id: @SiNABiGO🇯🇵 § 2",
-        "Channel id: @SiNABiGO🇷🇺 § 3",
-        "Channel id: @SiNABiGO🇷🇺 § 4",
-        "Channel id: @SiNABiGO🇯🇵 § 5",
-        "Channel id: @SiNABiGO🇯🇵 § 6",
-        "Channel id: @SiNABiGO🇩🇪 § 7",
-        "Channel id: @SiNABiGO🇭🇰 § 8",
-        "Channel id: @SiNABiGO🇭🇰 § 9",
-        "Channel id: @SiNABiGO🇸🇬 § 10",
-        "Channel id: @SiNABiGO🇷🇺 § 11",
-        "Channel id: @SiNABiGO🇸🇬 § 12",
-        "Channel id: @SiNABiGO🇭🇰 § 13",
-        "Channel id: @SiNABiGO🇷🇺 § 14",
-        "Channel id: @SiNABiGO🇨🇭 § 15",
-        "Channel id: @SiNABiGO🇰🇷 § 16",
-        "Channel id: @SiNABiGO🇬🇧 § 17",
-        "Channel id: @SiNABiGO🇸🇬 § 18",
-        "Channel id: @SiNABiGO🇸🇬 § 19",
-        "Channel id: @SiNABiGO🇰🇷 § 20",
-        "Channel id: @SiNABiGO🇷🇺 § 21",
-        "Channel id: @SiNABiGO🇪🇺 § 22",
-        "Channel id: @SiNABiGO🇭🇰 § 23",
-        "Channel id: @SiNABiGO🇫🇷 § 24",
-        "Channel id: @SiNABiGO🇺🇸 § 25",
-        "Channel id: @SiNABiGO🇩🇪 § 26",
-        "Channel id: @SiNABiGO🇷🇺 § 27",
-        "Channel id: @SiNABiGO🇸🇬 § 28",
-        "Channel id: @SiNABiGO🇺🇸 § 29",
-        "Channel id: @SiNABiGO🇺🇸 § 30",
-        "Channel id: @SiNABiGO🇷🇺 § 31",
-        "Channel id: @SiNABiGO🇵🇱 § 32",
-        "Channel id: @SiNABiGO🇩🇪 § 33",
-        "Channel id: @SiNABiGO🇩🇪 § 34",
-        "Channel id: @SiNABiGO🇩🇪 § 35",
-        "Channel id: @SiNABiGO🇩🇪 § 36",
-        "Channel id: @SiNABiGO🇩🇪 § 37",
-        "Channel id: @SiNABiGO🇩🇪 § 38",
-        "Channel id: @SiNABiGO🇺🇲 § 39",
-        "Channel id: @SiNABiGO🇩🇪 § 40",
-        "Channel id: @SiNABiGO🇦🇹 § 41",
-        "Channel id: @SiNABiGO🇺🇸 § 42",
-        "Channel id: @SiNABiGO🇩🇪 § 43",
-        "Channel id: @SiNABiGO🇺🇲 § 44",
-        "Channel id: @SiNABiGO🇹🇷 § 45",
-        "Channel id: @SiNABiGO🇩🇪 § 46",
-        "Channel id: @SiNABiGO🇸🇪 § 47",
-        "Channel id: @SiNABiGO🇷🇺 § 48",
-        "Channel id: @SiNABiGO🇫🇮 § 49"
+        "¹Channel: @SiNABiGO § 0",
+        "⁸Channel: @SiNABiGO 🇩🇪 § 1",
+        "²Channel: @SiNABiGO § 2",
+        "³Channel: @SiNABiGO § 3",
+        "⁹Channel: @SiNABiGO 🇩🇪 § 4",
+        "⁴Channel: @SiNABiGO § 5",
+        "⁵Channel: @SiNABiGO § 6",
+        "¹⁰Channel: @SiNABiGO 🇩🇪 § 7",
+        "⁷Channel: @SiNABiGO 🇦🇹 § 8",
+        "¹⁵Channel: @SiNABiGO 🇺🇸 § 9",
+        "¹¹Channel: @SiNABiGO 🇩🇪 § 10",
+        "⁶Channel: @SiNABiGO § 11",
+        "¹⁴Channel: @SiNABiGO 🇹🇷 § 12",
+        "¹²Channel: @SiNABiGO 🇩🇪 § 13",
+        "¹³Channel: @SiNABiGO 🇸🇪 § 14"
       ],
       "url": "http://cp.cloudflare.com",
       "interval": "10m0s",
@@ -244,190 +157,9 @@
       "idle_timeout": "30m0s",
       "interrupt_exist_connections": true
     },
-    {
+{
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇷🇺 § 0",
-      "server": "45.140.169.231",
-      "server_port": 8080,
-      "password": "a51c8701-ae69-4976-9b23-cafb8d12ef60",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇷🇺 § 1",
-      "server": "195.58.48.220",
-      "server_port": 80,
-      "obfs": {
-        "type": "salamander",
-        "password": "MzliZDM5MDFhYmFlNTAyMA=="
-      },
-      "password": "c9e76d3e-ec9d-425a-9a35-83c8b4f20ef7",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇯🇵 § 2",
-      "server": "23.26.34.209",
-      "server_port": 8080,
-      "password": "55c19651-6c59-43c2-a224-e2c5ff9f767d",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇷🇺 § 3",
-      "server": "176.32.35.198",
-      "server_port": 8080,
-      "obfs": {
-        "type": "salamander",
-        "password": "NDQyMDdkMTEzNDRmMDAxYg=="
-      },
-      "password": "4e8acd45-196a-4dfc-a036-9fd3e50a7290",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇷🇺 § 4",
-      "server": "195.58.49.12",
-      "server_port": 80,
-      "obfs": {
-        "type": "salamander",
-        "password": "MzliZDM5MDFhYmFlNTAyMA=="
-      },
-      "password": "46ef40d2-89bf-4fe6-8a27-258426836821",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇯🇵 § 5",
-      "server": "oracle-amd-osaka1.lanmaoyun.icu",
-      "server_port": 30001,
-      "password": "5bc4c4e6-992b-4f99-8e8c-54314ac2cde6",
-      "tls": {
-        "enabled": true,
-        "server_name": "osaka.nodes.lanmaoyun.icu",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇯🇵 § 6",
-      "server": "oracle-amd-tokyo1.lanmaoyun.icu",
-      "server_port": 30001,
-      "password": "5bc4c4e6-992b-4f99-8e8c-54314ac2cde6",
-      "tls": {
-        "enabled": true,
-        "server_name": "tokyo.nodes.lanmaoyun.icu",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇩🇪 § 7",
-      "server": "oracle-arm-frankfurt1.lanmaoyun.icu",
-      "server_port": 30001,
-      "password": "ba0efe41-dd40-4ed9-a22f-38caaad4a397",
-      "tls": {
-        "enabled": true,
-        "server_name": "frankfurt1.nodes.lanmaoyun.icu",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇭🇰 § 8",
-      "server": "45.144.174.75",
-      "server_port": 3348,
-      "obfs": {
-        "type": "salamander",
-        "password": "Y2JhZTU3ZjE4ZTI0MzRmMQ=="
-      },
-      "password": "c9e76d3e-ec9d-425a-9a35-83c8b4f20ef7",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇭🇰 § 9",
-      "server": "141.11.217.113",
-      "server_port": 8080,
-      "password": "3607a21d-b6ea-4762-8526-7093e2119c2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇸🇬 § 10",
-      "server": "103.136.68.253",
-      "server_port": 80,
-      "obfs": {
-        "type": "salamander",
-        "password": "OWU2MmNkZDU3YjUwMTZkNQ=="
-      },
-      "password": "46ef40d2-89bf-4fe6-8a27-258426836821",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇷🇺 § 11",
-      "server": "nmehw.kovmk.website",
-      "server_port": 1521,
-      "password": "81ee68be-c93b-4cba-a6cd-feddd7b1885b",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇸🇬 § 12",
-      "server": "oracle-amd-singapore1.lanmaoyun.icu",
-      "server_port": 30001,
-      "password": "5bc4c4e6-992b-4f99-8e8c-54314ac2cde6",
-      "tls": {
-        "enabled": true,
-        "server_name": "main.nodes.lanmaoyun.icu",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇭🇰 § 13",
-      "server": "ahkt.sulink.one",
-      "server_port": 21064,
-      "password": "dd6c5431-5d90-4442-b0ff-e92e6e9580aa",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇷🇺 § 14",
+      "tag": "¹Channel: @SiNABiGO § 0",
       "server": "176.32.33.158",
       "server_port": 1200,
       "obfs": {
@@ -440,63 +172,21 @@
         "insecure": true
       }
     },
-    {
+{
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇨🇭 § 15",
-      "server": "194.87.18.224",
-      "server_port": 1200,
-      "obfs": {
-        "type": "salamander",
-        "password": "NjkxYTRjYWIzNjRiNGQyOQ=="
-      },
-      "password": "e326a5ec-7a3e-40d6-ae7f-56ca3055ff8c",
+      "tag": "⁸Channel: @SiNABiGO 🇩🇪 § 1",
+      "server": "152.53.54.139",
+      "server_port": 30103,
+      "password": "91aa5eb5-e257-4885-a591-8ba742c4fcd2",
       "tls": {
         "enabled": true,
+        "server_name": "35afq4514.surfcat.store",
         "insecure": true
       }
     },
-    {
+{
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇰🇷 § 16",
-      "server": "oracle-arm-seoul1.lanmaoyun.icu",
-      "server_port": 30001,
-      "password": "5bc4c4e6-992b-4f99-8e8c-54314ac2cde6",
-      "tls": {
-        "enabled": true,
-        "server_name": "korea.nodes.lanmaoyun.icu",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇬🇧 § 17",
-      "server": "5.39.254.34",
-      "server_port": 5277,
-      "obfs": {
-        "type": "salamander",
-        "password": "ZTg1ZWVjNjAxZmRlNGI5MA=="
-      },
-      "password": "4e8acd45-196a-4dfc-a036-9fd3e50a7290",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇸🇬 § 18",
-      "server": "sg07v6.sulink.one",
-      "server_port": 32052,
-      "password": "dd6c5431-5d90-4442-b0ff-e92e6e9580aa",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇸🇬 § 19",
+      "tag": "²Channel: @SiNABiGO § 2",
       "server": "103.136.68.92",
       "server_port": 3307,
       "obfs": {
@@ -511,209 +201,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇰🇷 § 20",
-      "server": "oracle-arm-chuncheon2.lanmaoyun.icu",
-      "server_port": 30001,
-      "password": "5bc4c4e6-992b-4f99-8e8c-54314ac2cde6",
-      "tls": {
-        "enabled": true,
-        "server_name": "korea.nodes.lanmaoyun.icu",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇷🇺 § 21",
-      "server": "176.32.35.194",
-      "server_port": 6323,
-      "obfs": {
-        "type": "salamander",
-        "password": "NDY2MDRjODQ5MjhkM2ZkNw=="
-      },
-      "password": "efa0dd5a-be97-469f-9679-aac4528cfbde",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇪🇺 § 22",
-      "server": "oracle-arm-london1.lanmaoyun.icu",
-      "server_port": 30001,
-      "password": "ba0efe41-dd40-4ed9-a22f-38caaad4a397",
-      "tls": {
-        "enabled": true,
-        "server_name": "london1.nodes.lanmaoyun.icu",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇭🇰 § 23",
-      "server": "212.192.12.97",
-      "server_port": 80,
-      "obfs": {
-        "type": "salamander",
-        "password": "Y2JhZTU3ZjE4ZTI0MzRmMQ=="
-      },
-      "password": "8819cbe7-7552-4290-86f2-a1dd676ee7d1",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇫🇷 § 24",
-      "server": "fr09.sulian.life",
-      "server_port": 40149,
-      "password": "dd6c5431-5d90-4442-b0ff-e92e6e9580aa",
-      "tls": {
-        "enabled": true,
-        "server_name": "fr09.sulian.life",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇺🇸 § 25",
-      "server": "oracle-amd-san-jose2.lanmaoyun.icu",
-      "server_port": 30001,
-      "password": "5bc4c4e6-992b-4f99-8e8c-54314ac2cde6",
-      "tls": {
-        "enabled": true,
-        "server_name": "san-jose2.nodes.lanmaoyun.icu",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇩🇪 § 26",
-      "server": "5.39.252.182",
-      "server_port": 8735,
-      "obfs": {
-        "type": "salamander",
-        "password": "M2UyNTc5OWUwYjkyM2Q2OQ=="
-      },
-      "password": "c9e76d3e-ec9d-425a-9a35-83c8b4f20ef7",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇷🇺 § 27",
-      "server": "195.133.52.63",
-      "server_port": 80,
-      "password": "81ee68be-c93b-4cba-a6cd-feddd7b1885b",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇸🇬 § 28",
-      "server": "sg03v6.sulink.one",
-      "server_port": 22052,
-      "password": "dd6c5431-5d90-4442-b0ff-e92e6e9580aa",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇺🇸 § 29",
-      "server": "us05.sulink.one",
-      "server_port": 42052,
-      "password": "dd6c5431-5d90-4442-b0ff-e92e6e9580aa",
-      "tls": {
-        "enabled": true,
-        "server_name": "us05.sulink.one",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇺🇸 § 30",
-      "server": "us02.sulink.one",
-      "server_port": 10522,
-      "password": "dd6c5431-5d90-4442-b0ff-e92e6e9580aa",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇷🇺 § 31",
-      "server": "46.17.44.62",
-      "server_port": 80,
-      "obfs": {
-        "type": "salamander",
-        "password": "MGJiYThkMjgwNDE1Y2FkMg=="
-      },
-      "password": "c9e76d3e-ec9d-425a-9a35-83c8b4f20ef7",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇵🇱 § 32",
-      "server": "bl01.sulink.one",
-      "server_port": 40148,
-      "password": "dd6c5431-5d90-4442-b0ff-e92e6e9580aa",
-      "tls": {
-        "enabled": true,
-        "server_name": "bl01.sulink.one",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇩🇪 § 33",
-      "server": "35f235a.surfcat.store",
-      "server_port": 30103,
-      "password": "9d765687-536c-4626-a2e2-6a403219e381",
-      "tls": {
-        "enabled": true,
-        "server_name": "35afq4514.surfcat.store",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇩🇪 § 34",
-      "server": "jostar-data.nl",
-      "server_port": 443,
-      "password": "28c05d48e2f470d07a4c392c9bd43849",
-      "tls": {
-        "enabled": true,
-        "server_name": "jostar-data.nl"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇩🇪 § 35",
-      "server": "awer13asd3.surfcat.store",
-      "server_port": 30103,
-      "password": "9d765687-536c-4626-a2e2-6a403219e381",
-      "tls": {
-        "enabled": true,
-        "server_name": "35afq4514.surfcat.store",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇩🇪 § 36",
+      "tag": "³Channel: @SiNABiGO § 3",
       "server": "35afq4514.surfcat.store",
       "server_port": 30006,
       "password": "9d765687-536c-4626-a2e2-6a403219e381",
@@ -725,7 +213,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇩🇪 § 37",
+      "tag": "⁹Channel: @SiNABiGO 🇩🇪 § 4",
       "server": "179.61.132.91",
       "server_port": 8443,
       "obfs": {
@@ -740,7 +228,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇩🇪 § 38",
+      "tag": "⁴Channel: @SiNABiGO § 5",
       "server": "35asfq3t.surfcat.store",
       "server_port": 30103,
       "password": "9d765687-536c-4626-a2e2-6a403219e381",
@@ -752,7 +240,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇺🇲 § 39",
+      "tag": "⁵Channel: @SiNABiGO § 6",
       "server": "2a05:f480:2000:1384:5400:5ff:fe19:8b0a",
       "server_port": 443,
       "obfs": {
@@ -767,7 +255,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇩🇪 § 40",
+      "tag": "¹⁰Channel: @SiNABiGO 🇩🇪 § 7",
       "server": "179.61.132.92",
       "server_port": 8443,
       "obfs": {
@@ -782,7 +270,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇦🇹 § 41",
+      "tag": "⁷Channel: @SiNABiGO 🇦🇹 § 8",
       "server": "152.53.54.139",
       "server_port": 30103,
       "password": "91aa5eb5-e257-4885-a591-8ba742c4fcd2",
@@ -794,7 +282,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇺🇸 § 42",
+      "tag": "¹⁵Channel: @SiNABiGO 🇺🇸 § 9",
       "server": "2001:19f0:1000:20d0:5400:5ff:fe19:3ba9",
       "server_port": 443,
       "obfs": {
@@ -808,16 +296,16 @@
         "insecure": true
       }
     },
-    {
+{
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇩🇪 § 43",
-      "server": "179.61.132.96",
-      "server_port": 8443,
+      "tag": "¹¹Channel: @SiNABiGO 🇩🇪 § 10",
+      "server": "176.32.33.158",
+      "server_port": 1200,
       "obfs": {
         "type": "salamander",
-        "password": "KevinZakarian"
+        "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
       },
-      "password": "KevinZakarian",
+      "password": "8819cbe7-7552-4290-86f2-a1dd676ee7d1",
       "tls": {
         "enabled": true,
         "insecure": true
@@ -825,7 +313,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇺🇲 § 44",
+      "tag": "⁶Channel: @SiNABiGO § 11",
       "server": "2001:19f0:5:34a0:5400:5ff:fe19:3f6f",
       "server_port": 443,
       "obfs": {
@@ -840,7 +328,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇹🇷 § 45",
+      "tag": "¹⁴Channel: @SiNABiGO 🇹🇷 § 12",
       "server": "quran.mci.ai",
       "server_port": 443,
       "password": "28c05d48e2f470d07a4c392c9bd43849",
@@ -850,14 +338,14 @@
     },
     {
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇩🇪 § 46",
-      "server": "179.61.132.90",
-      "server_port": 8443,
+      "tag": "¹²Channel: @SiNABiGO 🇩🇪 § 13",
+      "server": "195.58.49.12",
+      "server_port": 80,
       "obfs": {
         "type": "salamander",
-        "password": "KevinZakarian"
+        "password": "MzliZDM5MDFhYmFlNTAyMA=="
       },
-      "password": "KevinZakarian",
+      "password": "46ef40d2-89bf-4fe6-8a27-258426836821",
       "tls": {
         "enabled": true,
         "insecure": true
@@ -865,44 +353,17 @@
     },
     {
       "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇸🇪 § 47",
-      "server": "70.34.207.153",
+      "tag": "¹³Channel: @SiNABiGO 🇸🇪 § 14",
+      "server": "2001:19f0:1000:20d0:5400:5ff:fe19:3ba9",
       "server_port": 443,
       "obfs": {
         "type": "salamander",
-        "password": "d2648ec2"
+        "password": "13f7ba5f"
       },
-      "password": "18240b2dfdd76484",
+      "password": "4e9ee29b39a28277",
       "tls": {
         "enabled": true,
-        "disable_sni": true,
-        "server_name": "70.34.207.153",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇷🇺 § 48",
-      "server": "ru.pianyi.info",
-      "server_port": 443,
-      "password": "54f0a61f-c6ff-49a4-86b5-d87e5dd74c29",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru.pianyi.info"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "Channel id: @SiNABiGO🇫🇮 § 49",
-      "server": "65.21.158.249",
-      "server_port": 2096,
-      "obfs": {
-        "type": "salamander",
-        "password": "Vk@l@b@shV"
-      },
-      "password": "rs3h2c9n8X",
-      "tls": {
-        "enabled": true,
+        "server_name": "[2001:19f0:1000:20d0:5400:5ff:fe19:3ba9]",
         "insecure": true
       }
     },
@@ -981,7 +442,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:16756",
-      "secret": "9pFUIFHTR3GVH4gn"
+      "secret": "V4D8--ja8C2cILhz"
     }
   }
 }
