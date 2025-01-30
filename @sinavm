@@ -1,6 +1,11 @@
+//subscription-userinfo: upload=0; download=0; total=957014092595200; expire=170
+//support-url: https://t.me/sinabigo
+//profile-web-page-url: https://t.me/sinavm
+
 {
   "log": {
     "level": "warn",
+    "output": "box.log",
     "timestamp": true
   },
   "dns": {
@@ -33,38 +38,7 @@
     ],
     "rules": [
       {
-        "domain": [
-          "hk01.ssr.ee",
-          "jp02.ssr.ee",
-          "jp03.ssr.ee",
-          "kr03.ssr.ee",
-          "de01.ssr.ee",
-          "us10.ssr.ee",
-          "sg01.ssr.ee",
-          "sg03.ssr.ee",
-          "sh.ssr.ee",
-          "kr04.ssr.ee",
-          "kr05.ssr.ee",
-          "kr06.ssr.ee",
-          "us09.ssr.ee",
-          "db01.ssr.ee",
-          "db02.ssr.ee",
-          "hk04.ssr.ee",
-          "sg02.ssr.ee",
-          "sg04.ssr.ee",
-          "krcc.ssr.ee",
-          "us01.ssr.ee",
-          "us02.ssr.ee",
-          "us04.ssr.ee",
-          "hk02.ssr.ee",
-          "hk03.ssr.ee",
-          "hk08.ssr.ee",
-          "us03.ssr.ee"
-        ],
-        "server": "dns-direct"
-      },
-      {
-        "domain": "www.google.com",
+        "domain": "connectivitycheck.gstatic.com",
         "server": "dns-remote",
         "rewrite_ttl": 3000
       },
@@ -85,8 +59,8 @@
       "sky.rethinkdns.com": [
         "104.17.147.22",
         "104.17.148.22",
-        "2a06:98c1:3120::6",
-        "2a06:98c1:3121::6",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
         "188.114.97.3",
         "188.114.96.3"
       ]
@@ -103,9 +77,9 @@
       "auto_route": true,
       "strict_route": true,
       "endpoint_independent_nat": true,
-      "stack": "gvisor",
+      "stack": "mixed",
       "sniff": true,
-      "domain_strategy": "prefer_ipv4"
+      "sniff_override_destination": true
     },
     {
       "type": "mixed",
@@ -113,8 +87,7 @@
       "listen": "127.0.0.1",
       "listen_port": 12334,
       "sniff": true,
-      "sniff_override_destination": true,
-      "domain_strategy": "prefer_ipv4"
+      "sniff_override_destination": true
     },
     {
       "type": "direct",
@@ -129,668 +102,494 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 0",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 1",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 2",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 3",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 4",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 5",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 6",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 7",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 8",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 9",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 10",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 11",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 12",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 13",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 14",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 15",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 16",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 17",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 18",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 19",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 20",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 21",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 22",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 23",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 24",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 25",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 26"
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸1",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸2",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸3",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸4",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸5",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸6",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸7",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸8",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵1",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵2",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵3",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵4",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵5",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵6",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬1",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬2",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬3",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬4",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬5",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬6",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬7",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬8",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪1",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪2",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪3",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪4",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪5",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪6",
+        "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺1",
+        "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺2",
+        "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺3",
+        "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺4",
+        "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺5",
+        "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺6"
       ],
-      "default": "auto",
-      "interrupt_exist_connections": true
+      "default": "auto"
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 0",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 1",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 2",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 3",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 4",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 5",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 6",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 7",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 8",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 9",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 10",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 11",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 12",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 13",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 14",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 15",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 16",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 17",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 18",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 19",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 20",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 21",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 22",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 23",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 24",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 25",
-        "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 26"
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸1",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸2",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸3",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸4",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸5",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸6",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸7",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸8",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵1",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵2",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵3",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵4",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵5",
+        "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵6",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬1",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬2",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬3",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬4",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬5",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬6",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬7",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬8",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪1",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪2",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪3",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪4",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪5",
+        "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪6",
+        "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺1",
+        "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺2",
+        "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺3",
+        "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺4",
+        "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺5",
+        "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺6"
       ],
-      "url": "https://www.google.com/?client=safari",
+      "url": "http://connectivitycheck.gstatic.com/generate_204",
       "interval": "10m0s",
       "tolerance": 1,
-      "idle_timeout": "30m0s",
-      "interrupt_exist_connections": true
+      "idle_timeout": "30m0s"
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 0",
-      "server": "hk01.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸1",
+      "server": "146.190.127.168",
+      "server_port": 18888,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GN3MVxR_r96bcN9g5aahxRhdJ2P84H2K0SzNJ7v8KWc",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "146.190.127.168",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 1",
-      "server": "hk02.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸2",
+      "server": "146.190.127.168",
+      "server_port": 18880,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_JucrB3QGJT8o5SUj8T97cjdBfCH798VDiXR1LhbulQ",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "146.190.127.168",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 2",
-      "server": "hk03.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸3",
+      "server": "146.190.127.168",
+      "server_port": 18881,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "L9bdPVJar46YyWxpCPXz4trctDD4r4Z5zL1H1zHX8nY",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "146.190.127.168",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 3",
-      "server": "hk04.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸4",
+      "server": "146.190.127.168",
+      "server_port": 18882,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7FUPFfHmcQGEF1WsK5UV28TAj_cZcBXgm_M9pFHBcEg",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "146.190.127.168",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 4",
-      "server": "hk08.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸5",
+      "server": "146.190.127.168",
+      "server_port": 18883,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IkdB1SppBdstqC4HmsnGn2uMrOJIRnfTN3f0GEmOpSo",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "146.190.127.168",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 5",
-      "server": "sg01.ssr.ee",
-      "server_port": 55560,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸6",
+      "server": "146.190.127.168",
+      "server_port": 18884,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XCxD6TpMsDdnUvWVmN2VnP3fOhIc22Oyo7JLZ1qGajQ",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "146.190.127.168",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 6",
-      "server": "sg02.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸7",
+      "server": "146.190.127.168",
+      "server_port": 18885,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MpL4k5knJNs-VAkUmu0XpUDFaPvf-BSHN1WxaqibOl4",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "146.190.127.168",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 7",
-      "server": "sg03.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝐒𝐢𝐍𝐀𝐕𝐌 - USA🇺🇸8",
+      "server": "146.190.127.168",
+      "server_port": 18886,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6yJHL6qhzGx4VgjGnlcBUU1q30IH7Rm6Savs4e4pZng",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "146.190.127.168",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 8",
-      "server": "sg04.ssr.ee",
-      "server_port": 55560,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵1",
+      "server": "18.182.9.248",
+      "server_port": 18880,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Dvv84goWLMnFoZWWLI8xtEErCIao_XnzXUVz9ryVSAU",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "18.182.9.248",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 9",
-      "server": "jp02.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵2",
+      "server": "18.182.9.248",
+      "server_port": 18888,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-V84l1G--c_u3Sg7d4Rm5esq1uizUDAcnlxjV5qG7jQ",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "18.182.9.248",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 10",
-      "server": "jp03.ssr.ee",
-      "server_port": 55560,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵3",
+      "server": "18.182.9.248",
+      "server_port": 18881,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3QV_m9Ukb2hl3veja4UuvjC79lcTZf7nIgoHwVyBRg4",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "18.182.9.248",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 11",
-      "server": "sh.ssr.ee",
-      "server_port": 55560,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵4",
+      "server": "18.182.9.248",
+      "server_port": 18887,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-V84l1G--c_u3Sg7d4Rm5esq1uizUDAcnlxjV5qG7jQ",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "18.182.9.248",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 12",
-      "server": "krcc.ssr.ee",
-      "server_port": 55560,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵5",
+      "server": "18.182.9.248",
+      "server_port": 18882,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_JZ866R1KiMlORcXdDkSAw6WtEx7hEz1ftQ0Yjq1vxk",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "18.182.9.248",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 13",
-      "server": "kr03.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝐒𝐢𝐍𝐀𝐕𝐌 - JP🇯🇵6",
+      "server": "18.182.9.248",
+      "server_port": 18886,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lqPQR0Kfw6Z3LL-yiq8vmoQ6j9gC3lNOiokq84kzBjQ",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "18.182.9.248",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 14",
-      "server": "kr04.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬1",
+      "server": "54.255.236.8",
+      "server_port": 18888,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EPdKAx6FEkt5xxhZZJfJw6vldhnDGtFDDB9EE5MsjxI",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "54.255.236.8",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 15",
-      "server": "kr05.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬2",
+      "server": "13.229.104.130",
+      "server_port": 18880,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RVFY7VhTIdNKrLd31EyjXgIlfxSkVEwNqVVsETClkRg",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "13.229.104.130",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 16",
-      "server": "kr06.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬3",
+      "server": "54.255.236.8",
+      "server_port": 18881,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "urliPPNaIJbTNMuUSSg6iRpTh5GNlGiVYUBxSWm4Iww",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "54.255.236.8",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 17",
-      "server": "us01.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬4",
+      "server": "13.229.104.130",
+      "server_port": 18882,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Fz8HhyDXOLkw3NU59cbyvLvyZEiaMhjmHZ8P-R5RxF0",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "13.229.104.130",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 18",
-      "server": "us02.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬5",
+      "server": "54.255.236.8",
+      "server_port": 18883,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AeJ40fWPYK3WSDtY_AGv3ewG_kwQvAoDtf3KIgk1DRU",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "54.255.236.8",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 19",
-      "server": "us03.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬6",
+      "server": "13.229.104.130",
+      "server_port": 18884,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XjWpqtyIQmXsbx5-HXLZmgJpr9V4Xzqtx3PLbCx_URE",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "13.229.104.130",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 20",
-      "server": "us04.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬7",
+      "server": "54.255.236.8",
+      "server_port": 18885,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "--Ssq_QptGzn8kl6PwVSRKglFCYXJHLUX2-Q4IGCgl0",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "54.255.236.8",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 21",
-      "server": "us09.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝕍𝕄 - SG🇸🇬8",
+      "server": "13.229.104.130",
+      "server_port": 18886,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wH77zrCUJsK9onL9tgB3QdTXFOlCUBFKlvPw16N1nCA",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "13.229.104.130",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 22",
-      "server": "us10.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪1",
+      "server": "138.68.85.226",
+      "server_port": 18888,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "b5MToLVScOCFJ29Ln9kNTKEhbc6Eiqvlv4WFSUU7ZhQ",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "138.68.85.226",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 23",
-      "server": "us01.ssr.ee",
-      "server_port": 55560,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪2",
+      "server": "138.68.85.226",
+      "server_port": 18880,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "b5MToLVScOCFJ29Ln9kNTKEhbc6Eiqvlv4WFSUU7ZhQ",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "138.68.85.226",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 24",
-      "server": "de01.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪3",
+      "server": "138.68.85.226",
+      "server_port": 18881,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J9tDU1LgAsPOktugcNeM6PDXTZqyiKj5bVyyb9qVUzY",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "138.68.85.226",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 25",
-      "server": "db01.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪4",
+      "server": "138.68.85.226",
+      "server_port": 18882,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3tyvN86mGzMnYhAMX06SJMYSWhG02rqzTr7GjS-OaWI",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "138.68.85.226",
+        "insecure": true
+      }
     },
     {
-      "type": "vless",
-      "tag": "@𝑺𝒊𝑵𝑨𝑩𝒊𝑮𝑶👈🏻کانال تلگرام § 26",
-      "server": "db02.ssr.ee",
-      "server_port": 443,
-      "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪5",
+      "server": "138.68.85.226",
+      "server_port": 18883,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0Vvc6EFXPQHWWqyhG4wek-MEh_q6a9CDMY7U-TSHGV4",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "packet_encoding": "xudp"
+        "server_name": "138.68.85.226",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝕊𝕚ℕ𝔸𝕍𝕄 - DE🇩🇪6",
+      "server": "138.68.85.226",
+      "server_port": 18884,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
+      "tls": {
+        "enabled": true,
+        "server_name": "138.68.85.226",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺1",
+      "server": "209.38.84.122",
+      "server_port": 18888,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
+      "tls": {
+        "enabled": true,
+        "server_name": "209.38.84.122",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺2",
+      "server": "209.38.84.122",
+      "server_port": 18880,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
+      "tls": {
+        "enabled": true,
+        "server_name": "209.38.84.122",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺3",
+      "server": "209.38.84.122",
+      "server_port": 18881,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
+      "tls": {
+        "enabled": true,
+        "server_name": "209.38.84.122",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺4",
+      "server": "209.38.84.122",
+      "server_port": 18882,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
+      "tls": {
+        "enabled": true,
+        "server_name": "209.38.84.122",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺5",
+      "server": "209.38.84.122",
+      "server_port": 18883,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
+      "tls": {
+        "enabled": true,
+        "server_name": "209.38.84.122",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "@𝙎𝙞𝙉𝘼𝙑𝙈 - AU🇦🇺6",
+      "server": "209.38.84.122",
+      "server_port": 18884,
+      "password": "aLAnhUcNkQby6-HXo17L2Xlh",
+      "tls": {
+        "enabled": true,
+        "server_name": "209.38.84.122",
+        "insecure": true
+      }
     },
     {
       "type": "dns",
@@ -827,6 +626,15 @@
       {
         "port": 53,
         "outbound": "dns-out"
+      },
+      {
+        "process_name": [
+          "Hiddify",
+          "Hiddify.exe",
+          "HiddifyCli",
+          "HiddifyCli.exe"
+        ],
+        "outbound": "bypass"
       },
       {
         "domain_suffix": ".ir",
@@ -867,7 +675,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:16756",
-      "secret": "53mKcMG_BMZ6ayYE"
+      "secret": "0fttzVU3BCKx7O5v"
     }
   }
 }
