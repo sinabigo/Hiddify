@@ -125,6 +125,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
+        "香港",
+        "美国",
+        "英国",
+        "德国",
+        "新加坡",
+        "日本",
         "@𝐒𝐢𝐍𝐀𝐕𝐌 👈🏻کانال تلگرام § 0",
         "@𝐒𝐢𝐍𝐀𝐕𝐌 👈🏻کانال تلگرام § 1",
         "@𝐒𝐢𝐍𝐀𝐕𝐌 👈🏻کانال تلگرام § 2",
@@ -189,6 +195,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
+        "香港",
+        "美国",
+        "英国",
+        "德国",
+        "新加坡",
+        "日本",
         "@𝐒𝐢𝐍𝐀𝐕𝐌 👈🏻کانال تلگرام § 0",
         "@𝐒𝐢𝐍𝐀𝐕𝐌 👈🏻کانال تلگرام § 1",
         "@𝐒𝐢𝐍𝐀𝐕𝐌 👈🏻کانال تلگرام § 2",
@@ -251,6 +263,126 @@
       "tolerance": 1,
       "idle_timeout": "30m0s",
       "interrupt_exist_connections": true
+    },
+    {
+      "type": "hysteria2",
+      "tag": "剩余流量：200 GB",
+      "server": "dg.laosijicc.top",
+      "server_port": 34564,
+      "password": "e574e09a-4a2e-4708-841d-f0fbaec90f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "dg.laosijicc.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "距离下次重置剩余：22 天",
+      "server": "dg.laosijicc.top",
+      "server_port": 34564,
+      "password": "e574e09a-4a2e-4708-841d-f0fbaec90f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "dg.laosijicc.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "套餐到期：2025-03-11",
+      "server": "dg.laosijicc.top",
+      "server_port": 34564,
+      "password": "e574e09a-4a2e-4708-841d-f0fbaec90f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "dg.laosijicc.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "官网:laosijicc.top",
+      "server": "dg.laosijicc.top",
+      "server_port": 34564,
+      "password": "e574e09a-4a2e-4708-841d-f0fbaec90f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "dg.laosijicc.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "香港",
+      "server": "xg.laosijicc.top",
+      "server_port": 34561,
+      "password": "e574e09a-4a2e-4708-841d-f0fbaec90f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "xg.laosijicc.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "美国",
+      "server": "mg.laosijicc.top",
+      "server_port": 34562,
+      "password": "e574e09a-4a2e-4708-841d-f0fbaec90f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "mg.laosijicc.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "英国",
+      "server": "yg.laosijicc.top",
+      "server_port": 34563,
+      "password": "e574e09a-4a2e-4708-841d-f0fbaec90f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "yg.laosijicc.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "德国",
+      "server": "dg.laosijicc.top",
+      "server_port": 34564,
+      "password": "e574e09a-4a2e-4708-841d-f0fbaec90f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "dg.laosijicc.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "新加坡",
+      "server": "xjp.laosijicc.top",
+      "server_port": 34565,
+      "password": "e574e09a-4a2e-4708-841d-f0fbaec90f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "xjp.laosijicc.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "日本",
+      "server": "rb.laosijicc.top",
+      "server_port": 34566,
+      "password": "e574e09a-4a2e-4708-841d-f0fbaec90f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "rb.laosijicc.top",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
