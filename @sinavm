@@ -8,7 +8,6 @@
 {
   "log": {
     "level": "warn",
-    "output": "box.log",
     "timestamp": true
   },
   "dns": {
@@ -42,16 +41,16 @@
     "rules": [
       {
         "domain": [
-          "pianyi-sg.jiumaojiu.org",
-          "pianyi-lu.jiumaojiu.org",
-          "pianyi-hk.jiumaojiu.org",
-          "pianyi-us.jiumaojiu.org",
-          "pianyi-jp.jiumaojiu.org"
+          "series-a2-mec.varzesh360.co",
+          "alistermalcolm.com",
+          "www.speedtest.net",
+          "series-a2-mec.samanehha.co",
+          "series-a2.varzesh360.co"
         ],
         "server": "dns-direct"
       },
       {
-        "domain": "connectivitycheck.gstatic.com",
+        "domain": "cp.cloudflare.com",
         "server": "dns-remote",
         "rewrite_ttl": 3000
       },
@@ -70,12 +69,12 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "104.17.148.22",
         "104.17.147.22",
-        "188.114.97.3",
-        "188.114.96.3",
+        "104.17.148.22",
+        "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3"
+        "188.114.96.3",
+        "188.114.97.3"
       ]
     },
     "independent_cache": true
@@ -86,13 +85,11 @@
       "tag": "tun-in",
       "mtu": 9000,
       "inet4_address": "172.19.0.1/28",
-      "inet6_address": "fdfe:dcba:9876::1/126",
       "auto_route": true,
       "strict_route": true,
       "endpoint_independent_nat": true,
-      "stack": "mixed",
-      "sniff": true,
-      "sniff_override_destination": true
+      "stack": "gvisor",
+      "sniff": true
     },
     {
       "type": "mixed",
@@ -115,298 +112,211 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال تلگرام1",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال تلگرام2",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال تلگرام3",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال تلگرام4",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال 1",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال 2",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال 3",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال 4",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻تلگرام 1",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻تلگرام 2",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻تلگرام 3",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻تلگرام 4",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻 1",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻 2",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻 3",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻 4",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠1",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠2",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠3",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠4"
+        "🎈@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻ویژه نوروز § 0",
+        "🎉@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻ویژه نوروز § 1",
+        "1-@SiNAVM 👈کانال تلگرام § 2",
+        "3-@SiNAVM 👈کانال تلگرام § 3",
+        "🇬🇧@𝐒𝐢𝐍𝐀𝐕𝐌👈کانال+تلگرام § 4",
+        "🏴󠁧󠁢󠁥󠁮󠁧󠁿@𝐒𝐢𝐍𝐀𝐕𝐌 👈کانال+تلگرام § 5",
+        "🏴󠁧󠁢󠁷󠁬󠁳󠁿@𝐒𝐢𝐍𝐀𝐕𝐌 👈کانال+تلگرام § 6",
+        "🏴󠁧󠁢󠁷󠁬󠁳󠁿@𝐒𝐢𝐍𝐀𝐕𝐌 👈کانال+تلگرام § 7",
+        "✅️ @𝗦𝗶𝗡𝗔𝗩𝗠 کانال تلگرامی § 8",
+        "✅️ @𝗦𝗶𝗡𝗔𝗩𝗠 کانال تلگرامی § 9"
       ],
-      "default": "auto"
+      "default": "auto",
+      "interrupt_exist_connections": true
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال تلگرام1",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال تلگرام2",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال تلگرام3",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال تلگرام4",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال 1",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال 2",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال 3",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال 4",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻تلگرام 1",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻تلگرام 2",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻تلگرام 3",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻تلگرام 4",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻 1",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻 2",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻 3",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻 4",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠1",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠2",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠3",
-        "@𝗦𝗶𝗡𝗔𝗩𝗠4"
+        "🎈@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻ویژه نوروز § 0",
+        "🎉@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻ویژه نوروز § 1",
+        "1-@SiNAVM 👈کانال تلگرام § 2",
+        "3-@SiNAVM 👈کانال تلگرام § 3",
+        "🇬🇧@𝐒𝐢𝐍𝐀𝐕𝐌👈کانال+تلگرام § 4",
+        "🏴󠁧󠁢󠁥󠁮󠁧󠁿@𝐒𝐢𝐍𝐀𝐕𝐌 👈کانال+تلگرام § 5",
+        "🏴󠁧󠁢󠁷󠁬󠁳󠁿@𝐒𝐢𝐍𝐀𝐕𝐌 👈کانال+تلگرام § 6",
+        "🏴󠁧󠁢󠁷󠁬󠁳󠁿@𝐒𝐢𝐍𝐀𝐕𝐌 👈کانال+تلگرام § 7",
+        "✅️ @𝗦𝗶𝗡𝗔𝗩𝗠 کانال تلگرامی § 8",
+        "✅️ @𝗦𝗶𝗡𝗔𝗩𝗠 کانال تلگرامی § 9"
       ],
-      "url": "http://connectivitycheck.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com",
       "interval": "10m0s",
       "tolerance": 1,
-      "idle_timeout": "30m0s"
+      "idle_timeout": "30m0s",
+      "interrupt_exist_connections": true
     },
     {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال تلگرام1",
-      "server": "pianyi-hk.jiumaojiu.org",
-      "server_port": 20163,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
+      "type": "vless",
+      "tag": "🎈@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻ویژه نوروز § 0",
+      "server": "104.21.56.44",
+      "server_port": 443,
+      "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
       "tls": {
-        "enabled": true
+        "enabled": true,
+        "server_name": "301.POoRIam.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram-sinavm-sinavm",
+        "headers": {
+          "Host": "301.pooriam.ir"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🎉@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻ویژه نوروز § 1",
+      "server": "www.speedtest.net",
+      "server_port": 80,
+      "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+      "transport": {
+        "type": "ws",
+        "path": "/sinavm-sinavm",
+        "headers": {
+          "Host": "redfree8w.pooriam.ir"
+        },
+        "max_early_data": 2550,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "trojan",
+      "tag": "1-@SiNAVM 👈کانال تلگرام § 2",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "password": "Pooria",
+      "tls": {
+        "enabled": true,
+        "server_name": "301.pOORiAm.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/trPyOrWMfkHd15oxiI",
+        "headers": {
+          "Host": "301.pooriam.ir"
+        },
+        "max_early_data": 1520,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال تلگرام2",
-      "server": "pianyi-hk.jiumaojiu.org",
-      "server_port": 20193,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
+      "type": "vless",
+      "tag": "3-@SiNAVM 👈کانال تلگرام § 3",
+      "server": "104.21.56.44",
+      "server_port": 443,
+      "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
       "tls": {
-        "enabled": true
-      }
+        "enabled": true,
+        "server_name": "301.POoRIam.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram-SiNAVM",
+        "headers": {
+          "Host": "301.pooriam.ir"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
     },
     {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال تلگرام3",
-      "server": "pianyi-hk.jiumaojiu.org",
-      "server_port": 20175,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇬🇧@𝐒𝐢𝐍𝐀𝐕𝐌👈کانال+تلگرام § 4",
+      "server": "series-a2-mec.samanehha.co",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "u17T3BvpYaaiuW2c"
     },
     {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال تلگرام4",
-      "server": "pianyi-hk.jiumaojiu.org",
-      "server_port": 20141,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
+      "type": "shadowsocks",
+      "tag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿@𝐒𝐢𝐍𝐀𝐕𝐌 👈کانال+تلگرام § 5",
+      "server": "series-a2.varzesh360.co",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "mps3FwmDjLrWaOVg"
     },
     {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال 1",
-      "server": "pianyi-us.jiumaojiu.org",
-      "server_port": 20101,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
+      "type": "shadowsocks",
+      "tag": "🏴󠁧󠁢󠁷󠁬󠁳󠁿@𝐒𝐢𝐍𝐀𝐕𝐌 👈کانال+تلگرام § 6",
+      "server": "series-a2-mec.varzesh360.co",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "u17T3BvpYaaiuW2c"
     },
     {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال 2",
-      "server": "pianyi-us.jiumaojiu.org",
-      "server_port": 20192,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
+      "type": "shadowsocks",
+      "tag": "🏴󠁧󠁢󠁷󠁬󠁳󠁿@𝐒𝐢𝐍𝐀𝐕𝐌 👈کانال+تلگرام § 7",
+      "server": "series-a2-mec.varzesh360.co",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "u17T3BvpYaaiuW2c"
     },
     {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال 3",
-      "server": "pianyi-us.jiumaojiu.org",
-      "server_port": 20114,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
+      "type": "vless",
+      "tag": "✅️ @𝗦𝗶𝗡𝗔𝗩𝗠 کانال تلگرامی § 8",
+      "server": "alistermalcolm.com",
+      "server_port": 443,
+      "uuid": "6d91bc33-2d86-4839-9205-02024ff483c7",
       "tls": {
-        "enabled": true
-      }
+        "enabled": true,
+        "server_name": "wtestfrtt.requesttest.cloudns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sinavm=5.180.30.112",
+        "headers": {
+          "Host": "wtestfrtt.requesttest.cloudns.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
     },
     {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻کانال 4",
-      "server": "pianyi-us.jiumaojiu.org",
-      "server_port": 20169,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
+      "type": "vless",
+      "tag": "✅️ @𝗦𝗶𝗡𝗔𝗩𝗠 کانال تلگرامی § 9",
+      "server": "alistermalcolm.com",
+      "server_port": 443,
+      "uuid": "6d91bc33-2d86-4839-9205-02024ff483c7",
       "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻تلگرام 1",
-      "server": "pianyi-jp.jiumaojiu.org",
-      "server_port": 20124,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻تلگرام 2",
-      "server": "pianyi-jp.jiumaojiu.org",
-      "server_port": 20137,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻تلگرام 3",
-      "server": "pianyi-jp.jiumaojiu.org",
-      "server_port": 20145,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻تلگرام 4",
-      "server": "pianyi-jp.jiumaojiu.org",
-      "server_port": 20115,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻 1",
-      "server": "pianyi-sg.jiumaojiu.org",
-      "server_port": 20134,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻 2",
-      "server": "pianyi-sg.jiumaojiu.org",
-      "server_port": 20102,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻 3",
-      "server": "pianyi-sg.jiumaojiu.org",
-      "server_port": 20121,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠👈🏻 4",
-      "server": "pianyi-sg.jiumaojiu.org",
-      "server_port": 20178,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠1",
-      "server": "pianyi-lu.jiumaojiu.org",
-      "server_port": 20166,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠2",
-      "server": "pianyi-lu.jiumaojiu.org",
-      "server_port": 20122,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠3",
-      "server": "pianyi-lu.jiumaojiu.org",
-      "server_port": 20158,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "@𝗦𝗶𝗡𝗔𝗩𝗠4",
-      "server": "pianyi-lu.jiumaojiu.org",
-      "server_port": 20134,
-      "up_mbps": 1000,
-      "down_mbps": 1000,
-      "password": "cf13142d-881c-4a15-b6ec-68a4689b628b",
-      "tls": {
-        "enabled": true
-      }
+        "enabled": true,
+        "server_name": "wtestfrtt.requesttest.cloudns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sinavm-sinavm=5.180.30.112",
+        "headers": {
+          "Host": "wtestfrtt.requesttest.cloudns.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
     },
     {
       "type": "dns",
@@ -443,15 +353,6 @@
       {
         "port": 53,
         "outbound": "dns-out"
-      },
-      {
-        "process_name": [
-          "Hiddify",
-          "Hiddify.exe",
-          "HiddifyCli",
-          "HiddifyCli.exe"
-        ],
-        "outbound": "bypass"
       },
       {
         "domain_suffix": ".ir",
@@ -492,7 +393,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:16756",
-      "secret": "PdTlv41ZEqAbjtcu"
+      "secret": "MCvr9CP3tPuv4Cyg"
     }
   }
 }
